@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Component1UI from '../Component1';
 
 const Component2Cont = styled.div`
     display:flex;

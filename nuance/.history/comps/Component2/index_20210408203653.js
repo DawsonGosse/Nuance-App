@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Component1UI from '../Component1';
 
 const Component2Cont = styled.div`
     display:flex;
@@ -152,7 +153,7 @@ const Component2UI = ({
                 <Component2agreeper>{AgreePer}</Component2agreeper>
                 <Component2agreetext>Agree</Component2agreetext>
             </Component2agree>
-            <Component2unsure UnsureVisiblity={UnsureVisiblity}>
+            <Component2unsure>
                 <Component2unsureper>{UnsurePer}</Component2unsureper>
                 <Component2unsuretext>Unsure</Component2unsuretext>
             </Component2unsure>

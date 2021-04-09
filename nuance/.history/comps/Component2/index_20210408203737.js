@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Component1UI from '../Component1';
 
 const Component2Cont = styled.div`
     display:flex;
@@ -137,7 +138,7 @@ const Component2unsuretext = styled.p`
 const Component2UI = ({
     AgreePer='67%',
     UnsurePer='23%',
-    DisagreePer='33%',
+    DisagreePer='38%',
     slider='85px',
     UnsureVisiblity='none'
 }) => 
