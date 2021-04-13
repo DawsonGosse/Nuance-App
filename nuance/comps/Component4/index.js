@@ -5,7 +5,6 @@ const Component4Cont = styled.div`
    display: flex;
    justify-content: center;
    align-items: flex-end;
- 
 `
 const Component4Nav = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
@@ -44,10 +43,7 @@ const Component4NavIcon =styled.img`
     padding: 4px;
 `
 
-const Component4UI = ({
-        
-
-}) => {
+const Component4UI = ({}) => {
     return <Component4Cont>
         <Component4Nav>
             <Component4NavHome>
