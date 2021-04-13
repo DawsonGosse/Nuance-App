@@ -1,0 +1,27 @@
+import React from 'react';
+import styled from 'styled-components';
+import Component1UI from '../Component1';
+
+const Component2Cont = styled.div`
+    display:flex;
+`;
+
+const Component2UI = ({
+
+}) => 
+{
+    return <Component>
+        <div>
+            <p></p>
+            <div></div>
+        </div>
+        <div>
+            <div>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+}
+
+export default Component2UI;
