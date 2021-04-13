@@ -13,6 +13,7 @@ const Component4Nav = styled.div`
     justify-content: space-between;
     align-items: center;
     background-color: #FFF;
+    border-top: 1px solid #D9D9D9;
     width: 414px;
     height:70px;
     padding: 16px 58px 16px 58px;
