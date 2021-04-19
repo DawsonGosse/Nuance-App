@@ -4,9 +4,10 @@ import styled from 'styled-components'
 const Component4Cont = styled.div`
    display: flex;
    justify-content: center;
-   align-items: flex-end;
+   bottom: 0;
    width:100%;
-
+   position:fixed;
+   z-index: 1;
 `
 const Component4Nav = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
@@ -25,13 +26,15 @@ const Component4Nav = styled.div`
 const Component4NavHome = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    padding-right: 107px;
 `
 
 const Component4NavForYou = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    padding-right: 107px;
 `
 
 const Component4NavCategories = styled.div`
