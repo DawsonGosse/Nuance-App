@@ -9,8 +9,6 @@ import NavigationUI from '../comps/Navigation';
 const Container = styled.div`
 width:100%;
 height:100%;
-padding-left:20px;
-padding-right:20px;
 padding-bottom: 90px;
 display:flex;
 justify-content:flex-start;
