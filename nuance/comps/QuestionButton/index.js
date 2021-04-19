@@ -6,6 +6,7 @@ const Component5Cont = styled.div`
     flex-direction: column;
     width: 374px;
     height: 46px;
+    margin-top: 50px;
 `
 
 const Component5Text = styled.h2`
@@ -15,8 +16,7 @@ const Component5Text = styled.h2`
     font-size: 24px;
     color: #3E3D46;
     text-transform: uppercase;
-    margin-top: 50px;
-    margin-bottom: 12px;
+    margin: 0;
 `
 
 const Component5Line = styled.hr`
