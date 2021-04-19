@@ -32,7 +32,7 @@ const Component8Banner = styled.div
     font-style: italic;
     font-weight: bold;
     font-size: 36px;
-    color: #FFFFFF;    
+    color: #FFFFFF;
 `
 
 const TopicButtonLargeUI = ({     

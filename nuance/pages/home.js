@@ -45,9 +45,9 @@ export default function HomePage() {
   const router = useRouter();
   return <Container>
     <BannerUI></BannerUI>
-    <QuestionCardUI headertext="Topic of the day" bodytext="General Motors has joined a list of growing companies to mandate that all their vehicles be electric by a certain date. Governments too, motivated 
-by..." subheadertext="Electric Vehicle debate" src="/CarImage.jpg" bgcolor="#8BB09C"></QuestionCardUI>
-    <QuestionCardUI></QuestionCardUI>
+    <QuestionCardUI headertext="Daliy Topic" bodytext="General Motors has joined a list of growing companies to mandate that all their vehicles be electric by a certain date. Governments too, motivated 
+by..." subheadertext="Electric Vehicle debate" src="/CarImage.jpg" bgcolor="#8BB09C" linecolor='#8BB09C' lineleft='0px' headingalign='right' headercolor='#8BB09C'></QuestionCardUI>
+    <QuestionCardUI linewidth='140px' lineleft='197px'></QuestionCardUI>
     <NavigationUI></NavigationUI>
   </Container>
 }
