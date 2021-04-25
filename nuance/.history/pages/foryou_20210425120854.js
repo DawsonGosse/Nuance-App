@@ -32,6 +32,11 @@ margin:0px;
 const TextContainer = styled.p`
 font-size:13px;
 `
+const Line = styled.div`
+width:100%;
+height:1px;
+background-color:#D9D9D9;
+`
 const RandomContainer = styled.div`
 width:100%;
 height:138px;
@@ -39,11 +44,6 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
-`
-const Line = styled.div`
-width:100%;
-height:1px;
-background-color:#D9D9D9;
 `
 
 export default function HomePage() {

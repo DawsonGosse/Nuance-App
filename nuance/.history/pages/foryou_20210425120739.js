@@ -24,14 +24,6 @@ align-items:center;
 justify-content:space-evenly;
 flex-direction:column;
 `
-const HeaderContainer = styled.h2`
-font-size:18px;
-font-weight:bold;
-margin:0px;
-`
-const TextContainer = styled.p`
-font-size:13px;
-`
 const RandomContainer = styled.div`
 width:100%;
 height:138px;
@@ -40,10 +32,21 @@ align-items:center;
 justify-content:center;
 flex-direction:column;
 `
+
 const Line = styled.div`
 width:100%;
 height:1px;
 background-color:#D9D9D9;
+`
+const HeaderContainer = styled.h2`
+font-size:18px;
+font-weight:bold;
+margin:0px;
+`
+
+const TextContainer = styled.p`
+font-size:13px;
+
 `
 
 export default function HomePage() {

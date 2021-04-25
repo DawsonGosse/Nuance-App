@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import BannerUI from '../comps/Banner';
+import TopicButtonUI from '../comps/TopicButton(survey)';
+import ButtonUI from '../comps/Button';
+import QuestionCardUI from '../comps/QuestionCard';
 import NavigationUI from '../comps/Navigation';
 import TopicButtonLargeUI from '../comps/TopicButtonLarge';
 import RandomButtonUI from '../comps/RandomizeButton';
@@ -29,17 +32,20 @@ font-size:18px;
 font-weight:bold;
 margin:0px;
 `
+
 const TextContainer = styled.p`
 font-size:13px;
+
 `
 const RandomContainer = styled.div`
-width:100%;
+width:100vw;
 height:138px;
 display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
 `
+
 const Line = styled.div`
 width:100%;
 height:1px;

@@ -31,13 +31,13 @@ const Component8Banner = styled.div
 const Component8BannerText = styled.p  
 `
     position:absolute;
-    bottom:-5px;
+    bottom:-9px;
     @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); 
     font-family: 'Arimo', sans-serif;
     text-transform: uppercase;
     font-style: italic;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 36px;
     color: #FFFFFF;
     margin:0px;
     padding-left:10px;

@@ -29,7 +29,7 @@ font-size:18px;
 font-weight:bold;
 margin:0px;
 `
-const TextContainer = styled.p`
+const TextContainer = styled.p
 font-size:13px;
 `
 const RandomContainer = styled.div`

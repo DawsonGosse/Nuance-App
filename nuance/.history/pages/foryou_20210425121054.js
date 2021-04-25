@@ -15,6 +15,14 @@ align-items:center;
 flex-direction:column;
 scroll-behavior: smooth;
 `
+const RandomContainer = styled.div`
+width:100%;
+height:138px;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+`
 
 const TopicContainer = styled.div`
 width:100%;
@@ -32,14 +40,7 @@ margin:0px;
 const TextContainer = styled.p`
 font-size:13px;
 `
-const RandomContainer = styled.div`
-width:100%;
-height:138px;
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-`
+
 const Line = styled.div`
 width:100%;
 height:1px;

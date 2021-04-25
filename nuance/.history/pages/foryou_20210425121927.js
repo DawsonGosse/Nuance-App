@@ -58,7 +58,7 @@ export default function HomePage() {
       <TopicButtonLargeUI bannertext='Bitcoin & Ethereum'></TopicButtonLargeUI>
     </TopicContainer>
     <RandomContainer>
-      <Line></Line>
+      <Line>h</Line>
       <TextContainer>Can't Decide? Get a Random Prompt!</TextContainer>
       <RandomButtonUI></RandomButtonUI>
     </RandomContainer>

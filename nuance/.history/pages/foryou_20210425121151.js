@@ -40,10 +40,11 @@ align-items:center;
 justify-content:center;
 flex-direction:column;
 `
+
 const Line = styled.div`
 width:100%;
 height:1px;
-background-color:#D9D9D9;
+background-Color:#D9D9D9;
 `
 
 export default function HomePage() {

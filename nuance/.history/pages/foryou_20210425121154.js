@@ -40,6 +40,7 @@ align-items:center;
 justify-content:center;
 flex-direction:column;
 `
+
 const Line = styled.div`
 width:100%;
 height:1px;

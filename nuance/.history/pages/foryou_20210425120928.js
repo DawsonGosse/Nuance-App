@@ -29,9 +29,6 @@ font-size:18px;
 font-weight:bold;
 margin:0px;
 `
-const TextContainer = styled.p`
-font-size:13px;
-`
 const RandomContainer = styled.div`
 width:100%;
 height:138px;
@@ -39,6 +36,9 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
+`
+const TextContainer = styled.p`
+font-size:13px;
 `
 const Line = styled.div`
 width:100%;

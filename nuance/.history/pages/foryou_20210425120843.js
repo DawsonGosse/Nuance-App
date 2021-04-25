@@ -29,6 +29,11 @@ font-size:18px;
 font-weight:bold;
 margin:0px;
 `
+const Line = styled.div`
+width:100%;
+height:1px;
+background-color:#D9D9D9;
+`
 const TextContainer = styled.p`
 font-size:13px;
 `
@@ -39,11 +44,6 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
-`
-const Line = styled.div`
-width:100%;
-height:1px;
-background-color:#D9D9D9;
 `
 
 export default function HomePage() {

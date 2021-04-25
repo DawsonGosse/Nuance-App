@@ -24,13 +24,13 @@ align-items:center;
 justify-content:space-evenly;
 flex-direction:column;
 `
+const TextContainer = styled.p`
+font-size:13px;
+`
 const HeaderContainer = styled.h2`
 font-size:18px;
 font-weight:bold;
 margin:0px;
-`
-const TextContainer = styled.p`
-font-size:13px;
 `
 const RandomContainer = styled.div`
 width:100%;
