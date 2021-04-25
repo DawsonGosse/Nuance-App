@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Component8Cont = styled.div     
 `  
     width: 100%px;
-    height: 240px;
+    height: 154px;
     border-radius: 3px;
     display: flex;
     justify-content: flex-start;
@@ -19,7 +19,7 @@ const Component8Img = styled.img                 // put image in public folder
 const Component8BannerText = styled.p  
 `
     position:absolute;
-    bottom:-10px;
+    bottom:-9px;
     @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); 
     font-family: 'Arimo', sans-serif;
     text-transform: uppercase;
@@ -33,7 +33,7 @@ const Component8BannerText = styled.p
 
 const Component8Banner = styled.div       
 `   
-    width: 100%;
+    width: 100%px;
     height: 44px;
     background:${props=>props.bgcolor};
     border-radius: 0px 0px 3px 3px;

@@ -19,7 +19,6 @@ scroll-behavior: smooth;
 const Text = styled.p`
 font-size:14px;
 margin:51px 0px 6px 0px;
-text-align:center;
     
 `
 const Icon = styled.img`

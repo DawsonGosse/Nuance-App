@@ -42,11 +42,6 @@ position:absolute
 `
 const SubText = styled.p`
 font-size:14px;
-position:absolute;
-text-align:center;
-color:white;
-top:185px;
-padding:20px;
 `
 
 export default function HomePage() {
@@ -55,11 +50,11 @@ export default function HomePage() {
     <BannerUI></BannerUI>
     <ImgCont>
         <Text>Electric vehicles are a better option.</Text>
-        <SubText>After reading the oposing argument do you still feel the same way?</SubText>
-        <ButtonAUI top='320px' left="20px" text="AGREE" routeTo='/rankings' ></ButtonAUI>
-        <ButtonAUI top='320px' left="218px" text="DISAGREE" routeTo='/rankings'></ButtonAUI>
-        <ButtonAUI top='400px' left="120px" text="UNSURE" routeTo='/rankings'></ButtonAUI>
-        <Img src="/CarImage2.png"></Img>
+        <SubText></SubText>
+        <ButtonAUI left="20px" text="AGREE" routeTo='/rankings' ></ButtonAUI>
+        <ButtonAUI left="218px" text="DISAGREE" routeTo='/rankings'></ButtonAUI>
+        <ButtonAUI top='360px' left="120px" text="UNSURE" routeTo='/rankings'></ButtonAUI>
+        <Img src="/CarImage1.png"></Img>
     </ImgCont>
     <NavigationUI></NavigationUI>
   </Container>

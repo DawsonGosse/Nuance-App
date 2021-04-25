@@ -19,7 +19,6 @@ scroll-behavior: smooth;
 const Text = styled.p`
 font-size:14px;
 margin:51px 0px 6px 0px;
-text-align:center;
     
 `
 const Icon = styled.img`
@@ -42,7 +41,6 @@ export default function CategoriesPage() {
     <QuestionButton text='We should use Geoengineering.'></QuestionButton>
     <QuestionButton text='We should use Nuclear Energy.'></QuestionButton>
     <Line></Line>
-    <Text>Stay Tuned! We are always adding <br></br> new prompts for you to look at!</Text>
     <NavigationUI></NavigationUI>
   </Container>
 }

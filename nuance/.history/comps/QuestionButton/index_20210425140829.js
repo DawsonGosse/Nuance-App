@@ -21,25 +21,21 @@ const Component5Text = styled.h2`
     font-size: 14px;
     color: #3E3D46;
     margin:0px 0px 0px 52px;
-    white-space:nowrap;
 `
 
 const Component5Arrow = styled.img`
-    margin-right:11px;
+    margin-right:5px;
 `
 
 const TextFlexCont = styled.div`
     display:flex;
     align-items:center;
-    justify-content:flex-start;
-    flex:2;
+    justify-content:flex-end;
 `
 const IconFlexCont = styled.div`
     display:flex;
     align-items:center;
     justify-content:flex-end;
-    flex:1;
-    
 `
 
 const QuestionButtonUI = ({
@@ -53,7 +49,7 @@ const QuestionButtonUI = ({
         </TextFlexCont>
         <IconFlexCont>
             <Component5Arrow src='/ArrowRight.png'></Component5Arrow>
-        </IconFlexCont>
+        </FlexCont>
     </Component5Cont>
 }
 

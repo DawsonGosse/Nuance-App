@@ -14,14 +14,13 @@ const Component5Cont = styled.div`
     
 `
 
-const Component5Text = styled.h2`
+const Component5Text = styled.span`
     @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); 
     font-family: 'Arimo', sans-serif;
     font-weight:bold;
     font-size: 14px;
     color: #3E3D46;
     margin:0px 0px 0px 52px;
-    white-space:nowrap;
 `
 
 const Component5Arrow = styled.img`

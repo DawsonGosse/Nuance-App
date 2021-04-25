@@ -21,7 +21,6 @@ const Component5Text = styled.h2`
     font-size: 14px;
     color: #3E3D46;
     margin:0px 0px 0px 52px;
-    white-space:nowrap;
 `
 
 const Component5Arrow = styled.img`

@@ -21,17 +21,16 @@ const Component5Text = styled.h2`
     font-size: 14px;
     color: #3E3D46;
     margin:0px 0px 0px 52px;
-    white-space:nowrap;
 `
 
 const Component5Arrow = styled.img`
-    margin-right:11px;
+    margin-right:5px;
 `
 
 const TextFlexCont = styled.div`
     display:flex;
     align-items:center;
-    justify-content:flex-start;
+    justify-content:flex-end;
     flex:2;
 `
 const IconFlexCont = styled.div`

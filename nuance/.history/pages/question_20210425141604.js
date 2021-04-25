@@ -18,18 +18,13 @@ scroll-behavior: smooth;
 `
 const Text = styled.p`
 font-size:14px;
-margin:51px 0px 6px 0px;
-text-align:center;
+margin:51px 0px 30px 0px;
     
 `
-const Icon = styled.img`
-margin:0px 0px 24px 0px;
+const Icon = styled.`
+font-size:14px;
+margin:51px 0px 30px 0px;
     
-`
-const Line = styled.div`
-    width:100%;
-    height:1px;
-    background:#D6D6D6;
 `
 
 export default function CategoriesPage() {
@@ -37,12 +32,9 @@ export default function CategoriesPage() {
     <BannerUI></BannerUI>
     <TopicHeaderUI bannertext="Climate Change"></TopicHeaderUI>
     <Text>Pick a Prompt that interests you</Text>
-    <Icon src='ArrowDown.png'></Icon>
     <QuestionButton text='Electric vehicles are a better option.' routeTo="/questionprompt"></QuestionButton>
     <QuestionButton text='We should use Geoengineering.'></QuestionButton>
     <QuestionButton text='We should use Nuclear Energy.'></QuestionButton>
-    <Line></Line>
-    <Text>Stay Tuned! We are always adding <br></br> new prompts for you to look at!</Text>
     <NavigationUI></NavigationUI>
   </Container>
 }

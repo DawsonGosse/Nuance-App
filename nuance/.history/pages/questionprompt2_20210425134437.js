@@ -56,8 +56,8 @@ export default function HomePage() {
     <ImgCont>
         <Text>Electric vehicles are a better option.</Text>
         <SubText>After reading the oposing argument do you still feel the same way?</SubText>
-        <ButtonAUI top='320px' left="20px" text="AGREE" routeTo='/rankings' ></ButtonAUI>
-        <ButtonAUI top='320px' left="218px" text="DISAGREE" routeTo='/rankings'></ButtonAUI>
+        <ButtonAUI top='380'left="20px" text="AGREE" routeTo='/rankings' ></ButtonAUI>
+        <ButtonAUI left="218px" text="DISAGREE" routeTo='/rankings'></ButtonAUI>
         <ButtonAUI top='400px' left="120px" text="UNSURE" routeTo='/rankings'></ButtonAUI>
         <Img src="/CarImage2.png"></Img>
     </ImgCont>

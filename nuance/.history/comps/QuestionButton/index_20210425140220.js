@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import {useRouter} from 'next/router' 
 
@@ -8,10 +8,8 @@ const Component5Cont = styled.div`
     width: 100%;
     height: 53px;
     margin-top: 0px;
-    align-items:center;
+    align-items:flex-start;
     border-top:1px solid #D9D9D9;
-    justify-content:flex-start;
-    
 `
 
 const Component5Text = styled.h2`
@@ -20,26 +18,13 @@ const Component5Text = styled.h2`
     font-weight:bold;
     font-size: 14px;
     color: #3E3D46;
-    margin:0px 0px 0px 52px;
-    white-space:nowrap;
+    margin:18px 0px 0px 52px;
 `
 
-const Component5Arrow = styled.img`
-    margin-right:11px;
-`
-
-const TextFlexCont = styled.div`
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-    flex:2;
-`
-const IconFlexCont = styled.div`
-    display:flex;
-    align-items:center;
-    justify-content:flex-end;
-    flex:1;
-    
+const Component5arrow = styled.div`
+    width: 100%;
+    height: 1px;
+    background:#D9D9D9;
 `
 
 const QuestionButtonUI = ({
@@ -48,12 +33,7 @@ const QuestionButtonUI = ({
 }) => {
     const router = useRouter();
     return <Component5Cont onClick={()=>router.push(routeTo)}>
-        <TextFlexCont>
-            <Component5Text>{text}</Component5Text>   
-        </TextFlexCont>
-        <IconFlexCont>
-            <Component5Arrow src='/ArrowRight.png'></Component5Arrow>
-        </IconFlexCont>
+        <Component5Text>{text}</Component5Text>   
     </Component5Cont>
 }
 

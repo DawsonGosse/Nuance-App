@@ -19,7 +19,7 @@ const Component8Img = styled.img                 // put image in public folder
 const Component8BannerText = styled.p  
 `
     position:absolute;
-    bottom:-10px;
+    bottom:-9px;
     @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); 
     font-family: 'Arimo', sans-serif;
     text-transform: uppercase;
