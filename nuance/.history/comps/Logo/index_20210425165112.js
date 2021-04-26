@@ -4,24 +4,15 @@ import styled from 'styled-components';
 const Component9Cont = styled.div`
     width: 256px;
     height: 256px;
-    text-align: center;    
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    position:relative;
-    
-`;
-const Component9box = styled.div`
-    width: 256px;
-    height: 256px;
     background-color: ${props=>props.bgcolor};
     border: solid black 3px;
     text-align: center;    
     display: flex;
     justify-content: center;
     align-items: center;  
-    animation: spin 3s ease-out 2s infinite;
+    animation: spin 10s ease-in-out infinite;
     
+    @keyframes spin
 `;
 
 const Component9Text = styled.h3`
@@ -29,7 +20,6 @@ const Component9Text = styled.h3`
     font-size: 36px;
     line-height: 41.4px;
     color: #000000;
-    position:absolute;
 `;
 
 const LogoUI = ({
@@ -37,8 +27,7 @@ const LogoUI = ({
     text='NUANCE',    
 }) => 
 {
-    return <Component9Cont>
-        <Component9box bgcolor={bgcolor}></Component9box>
+    return <Component9Cont bgcolor={bgcolor}>
         <Component9Text>{text}</Component9Text>
     </Component9Cont>
 }

@@ -8,7 +8,7 @@ const Component9Cont = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;  
-    position:relative;
+    
     
 `;
 const Component9box = styled.div`
@@ -20,7 +20,7 @@ const Component9box = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;  
-    animation: spin 3s ease-out 2s infinite;
+    animation: spin 1s ease-in-out 1s infinite;
     
 `;
 
