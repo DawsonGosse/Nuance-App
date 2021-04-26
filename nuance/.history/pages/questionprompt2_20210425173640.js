@@ -53,7 +53,7 @@ padding:20px;
 export default function HomePage() {
   const router = useRouter();
   return <Container>
-    <BannerBackUI></BannerBackUI>
+    <BannerUI></BannerUI>
     <ImgCont>
         <Text>Electric vehicles are a better option.</Text>
         <SubText>After reading the oposing argument do you still feel the same way?</SubText>

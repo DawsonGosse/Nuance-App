@@ -7,8 +7,7 @@ import NavigationUI from '../comps/Navigation';
 import ButtonUI from '../comps/Button';
 import BannerBackUI from '../comps/Banner(BackButton)';
 
-const Container = styled.div
-`
+const Container = styled.div`
     width:100%;
     height:100%;
     padding-bottom: 90px;
@@ -19,16 +18,15 @@ const Container = styled.div
     scroll-behavior: smooth;
 `
 
-const DisagreeImg = styled.img
-`
+const AgreeImg = styled.img`
     padding-bottom: 40px;
 `
 
 export default function CategoriesPage() {
   return <Container>
-    <BannerBackUI></BannerBackUI>
+    <BannerUI></BannerUI>
     <ProgressBarUI></ProgressBarUI>
-    <DisagreeImg src='/disagree.png'></DisagreeImg>
+    <AgreeImg src='/agree.png'></AgreeImg>
     <ButtonUI text='FINISH!' routeTo='/questionprompt2'></ButtonUI>
     <NavigationUI></NavigationUI>
   </Container>

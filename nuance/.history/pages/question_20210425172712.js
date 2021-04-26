@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
-import BannerBackUI from '../comps/Banner(BackButton)';
+import BannerUI from '../comps/Banner';
 import TopicHeaderUI from '../comps/TopicHeader'; 
 import QuestionButton from '../comps/QuestionButton';
 import NavigationUI from '../comps/Navigation';
@@ -34,7 +34,7 @@ const Line = styled.div`
 
 export default function CategoriesPage() {
   return <Container>
-    <BannerBackUI></BannerBackUI>
+    <BannerBackUI></BannerUI>
     <TopicHeaderUI bannertext="Climate Change"></TopicHeaderUI>
     <Text>Pick a Prompt that interests you</Text>
     <Icon src='ArrowDown.png'></Icon>
