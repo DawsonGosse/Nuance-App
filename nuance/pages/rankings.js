@@ -5,6 +5,7 @@ import ButtonUI from '../comps/Button'
 import NavigationUI from '../comps/Navigation'
 import ResultScaleUI from '../comps/ResultScale'
 import BannerBackUI from '../comps/Banner(BackButton)'
+import ProgressBarUI from '../comps/ProgressBar'
 
 const Container = styled.div`
   width:100%;
@@ -125,6 +126,7 @@ export default function HomePage() {
   const router = useRouter();
   return <Container>
     <BannerBackUI></BannerBackUI>
+    <ProgressBarUI></ProgressBarUI>
     <HeadCont>
         <HeaderText>The Results Are In</HeaderText>
     </HeadCont>

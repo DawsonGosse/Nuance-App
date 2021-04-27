@@ -27,7 +27,7 @@ const DisagreeImg = styled.img`
 export default function CategoriesPage() {
   return <Container>
     <BannerBackUI></BannerBackUI>
-    <ProgressBarUI></ProgressBarUI>
+    <ProgressBarUI id="bar"></ProgressBarUI>
     <DisagreeImg src='/disagree.png'></DisagreeImg>
     <ButtonUI text='FINISH!' routeTo='/questionprompt2'></ButtonUI>
     <NavigationUI></NavigationUI>
