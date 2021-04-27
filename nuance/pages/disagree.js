@@ -21,6 +21,7 @@ const Container = styled.div
 
 const DisagreeImg = styled.img
 `
+    width: 100vw;
     padding-bottom: 40px;
 `
 

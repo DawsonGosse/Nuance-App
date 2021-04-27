@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const Component8Cont = styled.div     
 `  
-    width: 100%px;
-    height: 240px;
+    width: 100vw;
+    max-height: 240px;
     border-radius: 3px;
     display: flex;
     justify-content: flex-start;
@@ -12,7 +12,9 @@ const Component8Cont = styled.div
 `;
 
 const Component8Img = styled.img                 // put image in public folder
-`       
+`  
+max-height: 240px;
+width: 100vw;     
 `;
 
 
@@ -33,7 +35,7 @@ const Component8BannerText = styled.p
 
 const Component8Banner = styled.div       
 `   
-    width: 100%;
+    width: 100vw ;
     height: 44px;
     background:${props=>props.bgcolor};
     border-radius: 0px 0px 3px 3px;

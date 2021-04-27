@@ -15,19 +15,21 @@ justify-content:flex-start;
 align-items:center;
 flex-direction:column;
 scroll-behavior: smooth;
+overflow: hidden;
+position:absolute;
 `
 const ImgCont = styled.div
 `
-width:100%;
-height:100%;
+width:100vw;
+height:100vh;
 object-fit:cover;
 overflow:hidden;
 position:relative;
 `
 const Img = styled.img
 `
-width:100vw;
-heigth:100vh;
+  width:100%;
+  height:100%;
 `
 const Text = styled.h3
 `

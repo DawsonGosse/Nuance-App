@@ -16,6 +16,8 @@ justify-content:flex-start;
 align-items:center;
 flex-direction:column;
 scroll-behavior: smooth;
+overflow: hidden;
+position:absolute;
 `
 const ImgCont = styled.div
 `
@@ -23,7 +25,6 @@ width:100%;
 object-fit:cover;
 overflow:hidden;
 position:relative;
-    
 `
 const Img = styled.img
 `
@@ -41,7 +42,8 @@ text-align:center;
 top:80px;
 position:absolute
 `
-const SubText = styled.p`
+const SubText = styled.p
+`
 font-size:14px;
 position:absolute;
 text-align:center;
