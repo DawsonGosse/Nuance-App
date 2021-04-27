@@ -15,7 +15,7 @@ em{
   0% { transform:rotate(1260deg); } 
   50% {transform:rotate(0deg);}
 }
-@keyframes FadeIn {
+@keyframes fadeIn {
 	0% {
 		opacity: 0;
 	}

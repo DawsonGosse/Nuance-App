@@ -16,7 +16,7 @@ const Component1Cont = styled.div`
     {
         transform: scale(1.02);
     }
-    box-shadow: 2px 4px 5px 0px #00000059;
+    box-shadow: 0px 4px 4px 0px #00000040;
 
 `;
 

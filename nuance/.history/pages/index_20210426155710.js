@@ -15,24 +15,20 @@ flex-direction:column;
 const ButtonContainer =styled.div`
 display:flex;
 width:100vw;
-height:200px;
-justify-content:space-evenly;
+height:100vh;
+justify-content:center;
 align-items:center;
 flex-direction:column;
-margin-top:200px;
-margin-bottom:20px;
-animation-name: FadeIn;
-animation-iteration-count: 1;
-animation-timing-function: ease-in;
-animation-duration: 3s;
+margin-top:300px;
+margin-bottom:40;
 `
 
 export default function LandingPage() {
   return <Container>
     <LogoUI></LogoUI>
     <ButtonContainer>
-      <ButtonUI text='GET STARTED' routeTo='/survey'></ButtonUI>
-      <ButtonUI text='HOW IT WORKS' bgcolor='#fff' color='#3E3D46'></ButtonUI>
+      <ButtonUI></ButtonUI>
+      <ButtonUI></ButtonUI>
     </ButtonContainer>
   </Container>
 }

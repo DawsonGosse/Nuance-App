@@ -11,13 +11,6 @@ const Component1Cont = styled.div`
     position:relative;
     margin:25px;
     transition: all .2s ease-in-out;
-
-    &:hover
-    {
-        transform: scale(1.02);
-    }
-    box-shadow: 2px 4px 5px 0px #00000059;
-
 `;
 
 const Component1Header = styled.div`

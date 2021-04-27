@@ -14,10 +14,8 @@ const Component1Cont = styled.div`
 
     &:hover
     {
-        transform: scale(1.02);
+        transform: scale(1.05);
     }
-    box-shadow: 2px 4px 5px 0px #00000059;
-
 `;
 
 const Component1Header = styled.div`

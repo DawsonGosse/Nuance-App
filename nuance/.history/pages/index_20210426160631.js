@@ -21,10 +21,7 @@ align-items:center;
 flex-direction:column;
 margin-top:200px;
 margin-bottom:20px;
-animation-name: FadeIn;
-animation-iteration-count: 1;
-animation-timing-function: ease-in;
-animation-duration: 3s;
+animation: FadeIn 2s 2s 1 eas;
 `
 
 export default function LandingPage() {

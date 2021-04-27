@@ -11,11 +11,6 @@ const Component6Cont = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;    
-
-    &:hover {
-        background-color:#8bb09c;
-        border:2px solid #8bb09c;
-    }
     `;
     
     const Component6Text = styled.h3`
@@ -28,7 +23,6 @@ const Component6Cont = styled.div`
     font-weight: bold;
     text-align: center;
     letter-spacing: 0.05em;
-    user-select:none;
     `;
 
 const ButtonUI = ({

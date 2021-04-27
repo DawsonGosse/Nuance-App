@@ -21,18 +21,14 @@ align-items:center;
 flex-direction:column;
 margin-top:200px;
 margin-bottom:20px;
-animation-name: FadeIn;
-animation-iteration-count: 1;
-animation-timing-function: ease-in;
-animation-duration: 3s;
 `
 
 export default function LandingPage() {
   return <Container>
     <LogoUI></LogoUI>
     <ButtonContainer>
-      <ButtonUI text='GET STARTED' routeTo='/survey'></ButtonUI>
-      <ButtonUI text='HOW IT WORKS' bgcolor='#fff' color='#3E3D46'></ButtonUI>
+      <ButtonUI text='GET STARTED'></ButtonUI>
+      <ButtonUI text='HOW IT WORKS' bgcolor='#fff' color=''></ButtonUI>
     </ButtonContainer>
   </Container>
 }

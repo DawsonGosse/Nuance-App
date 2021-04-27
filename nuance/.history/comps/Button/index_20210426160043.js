@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {useRouter} from 'next/router'
+import {useRouter} from 'next/router' 
 
 const Component6Cont = styled.div`
     width: 180px;
@@ -8,24 +8,14 @@ const Component6Cont = styled.div`
     background-color: ${props=>props.bgcolor};
     border-radius: 3px;    
 
-    color: #E5E5E5;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
     text-align: center;
     letter-spacing: 0.05em;
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    position:absolute; 
-    top:${props=>props.top};
-    left:${props=>props.left};
-
-    &:hover {
-        background-color:#8bb09c;
-    }
+    align-items: center;    
 `;
 
 const Component6Text = styled.h3`
@@ -33,21 +23,20 @@ const Component6Text = styled.h3`
     font-family: 'Arimo', sans-serif;
     font-size: 18px;
     line-height: 20.7px;
-    color: #F5F5F5;
+    color: ${props=>props.color};
 `;
 
-const ButtonAUI = ({
+const ButtonUI = ({
     bgcolor='#3E3D46',
     text='NEXT',
-    top="280px",
-    left="50px",
-    routeTo='/home'      
+    color='#E5E5E5',
+    routeTo='/home',
 }) => 
 {
     const router = useRouter();
-    return <Component6Cont bgcolor={bgcolor} top={top} left={left} onClick={()=>router.push(routeTo)}>
-        <Component6Text>{text}</Component6Text>
+    return <Component6Cont bgcolor={bgcolor} onClick={()=>router.push(routeTo)}>
+        <Component6Text color={color}>{text}</Component6Text>
     </Component6Cont>
 }
 
-export default ButtonAUI;
+export default ButtonUI;

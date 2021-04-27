@@ -7,29 +7,20 @@ const Component6Cont = styled.div`
     height: 60px;
     background-color: ${props=>props.bgcolor};
     border-radius: 3px;    
-    border:2px solid #3e3d46;
+
+
     display: flex;
     justify-content: center;
     align-items: center;    
+`;
 
-    &:hover {
-        background-color:#8bb09c;
-        border:2px solid #8bb09c;
-    }
-    `;
-    
-    const Component6Text = styled.h3`
+const Component6Text = styled.h3`
     @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); 
     font-family: 'Arimo', sans-serif;
     font-size: 18px;
     line-height: 20.7px;
     color: ${props=>props.color};
-    font-style: normal;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 0.05em;
-    user-select:none;
-    `;
+`;
 
 const ButtonUI = ({
     bgcolor='#3E3D46',

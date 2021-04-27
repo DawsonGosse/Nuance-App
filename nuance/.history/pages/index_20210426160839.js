@@ -21,10 +21,11 @@ align-items:center;
 flex-direction:column;
 margin-top:200px;
 margin-bottom:20px;
-animation-name: FadeIn;
-animation-iteration-count: 1;
-animation-timing-function: ease-in;
-animation-duration: 3s;
+opacity:0;
+animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
 `
 
 export default function LandingPage() {

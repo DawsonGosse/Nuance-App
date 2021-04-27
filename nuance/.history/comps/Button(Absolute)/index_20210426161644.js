@@ -25,6 +25,7 @@ const Component6Cont = styled.div`
 
     &:hover {
         background-color:#8bb09c;
+        border:2px solid #8bb09c;
     }
 `;
 

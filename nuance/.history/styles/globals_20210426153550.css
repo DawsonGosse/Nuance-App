@@ -15,11 +15,11 @@ em{
   0% { transform:rotate(1260deg); } 
   50% {transform:rotate(0deg);}
 }
-@keyframes FadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+
+QuestionCardUI{
+transition: all .2s ease-in-out;  
+}
+
+QuestionCardUI:hover{
+  transform: scale(1.1);
 }

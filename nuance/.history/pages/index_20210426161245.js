@@ -24,7 +24,8 @@ margin-bottom:20px;
 animation-name: FadeIn;
 animation-iteration-count: 1;
 animation-timing-function: ease-in;
-animation-duration: 3s;
+animation-duration: 1.5s;
+animation-delay:2s;
 `
 
 export default function LandingPage() {

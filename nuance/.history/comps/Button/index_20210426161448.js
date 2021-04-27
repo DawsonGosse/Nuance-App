@@ -13,8 +13,7 @@ const Component6Cont = styled.div`
     align-items: center;    
 
     &:hover {
-        background-color:#8bb09c;
-        border:2px solid #8bb09c;
+        background-color:#8bb;
     }
     `;
     

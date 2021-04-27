@@ -7,15 +7,10 @@ const Component6Cont = styled.div`
     height: 60px;
     background-color: ${props=>props.bgcolor};
     border-radius: 3px;    
-    border:2px solid #3e3d46;
+    border:1px solid ${props=>props.bordercolor};
     display: flex;
     justify-content: center;
     align-items: center;    
-
-    &:hover {
-        background-color:#8bb09c;
-        border:2px solid #8bb09c;
-    }
     `;
     
     const Component6Text = styled.h3`
@@ -28,7 +23,6 @@ const Component6Cont = styled.div`
     font-weight: bold;
     text-align: center;
     letter-spacing: 0.05em;
-    user-select:none;
     `;
 
 const ButtonUI = ({
