@@ -22,27 +22,44 @@ const ProgressBar = styled.div`
 
 const ProgressBarMove = styled.div`
     height: 18px;
+    width: 0;
     background-color: #8BB09C;    
     border-radius: 20px;
 `
 
 const ProgressBarUI = ({}) => 
 {
+    let ready = true
+
     function ScrollProgress() 
      {
-        let progress = document.body.scrollTop || document.documentElement.scrollTop
-        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-        let scrolled = (progress / height) * 100
-        document.getElementById("bar").style.width = scrolled + "%"
-    }
+         let bar = document.getElementById("bar")
 
+         // checks to see if there is a scroll bar present on the page 
+         if(bar)
+         {
+            let progress = document.body.scrollTop || document.documentElement.scrollTop
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+            let scrolled = (progress / height) * 100
+            bar.style.width = scrolled + "%"
+         }
+         else
+         {
+             return
+         }
+    
+    }
+    
     window.onscroll = function() {ScrollProgress()}
+    
     
     return <ProgressBarCont>
         <ProgressBar>
             <ProgressBarMove id="bar"></ProgressBarMove>
         </ProgressBar>
     </ProgressBarCont>
+
+    
 }
 
 export default ProgressBarUI
