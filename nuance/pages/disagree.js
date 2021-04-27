@@ -7,8 +7,7 @@ import NavigationUI from '../comps/Navigation';
 import ButtonUI from '../comps/Button';
 import BannerBackUI from '../comps/Banner(BackButton)';
 
-const Container = styled.div
-`
+const Container = styled.div`
     width:100%;
     height:100%;
     padding-bottom: 90px;
@@ -17,10 +16,10 @@ const Container = styled.div
     align-items:center;
     flex-direction:column;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 `
 
-const DisagreeImg = styled.img
-`
+const DisagreeImg = styled.img`
     width: 100vw;
     padding-bottom: 40px;
 `
