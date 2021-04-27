@@ -5,14 +5,15 @@ const ProgressBarCont = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 322px;
-    height: 18px;
-    border-radius: 20px;
-    padding-bottom: 40px;
+    width: 100%;
+    background-color: #FFF;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
 `
 
 const ProgressBar = styled.div`
-    width: 100%;
+    width: 322px;
     height: 18px;
     background-color: #D0E2D8;    
     border-radius: 20px;
@@ -20,7 +21,6 @@ const ProgressBar = styled.div`
 `
 
 const ProgressBarMove = styled.div`
-    width: 10%;
     height: 18px;
     background-color: #8BB09C;    
     border-radius: 20px;
@@ -28,9 +28,19 @@ const ProgressBarMove = styled.div`
 
 const ProgressBarUI = ({}) => 
 {
+    function ScrollProgress() 
+     {
+        let progress = document.body.scrollTop || document.documentElement.scrollTop
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+        let scrolled = (progress / height) * 100
+        document.getElementById("bar").style.width = scrolled + "%"
+    }
+
+    window.onscroll = function() {ScrollProgress()}
+    
     return <ProgressBarCont>
         <ProgressBar>
-            <ProgressBarMove></ProgressBarMove>
+            <ProgressBarMove id="bar"></ProgressBarMove>
         </ProgressBar>
     </ProgressBarCont>
 }
