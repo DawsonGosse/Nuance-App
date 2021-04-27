@@ -33,6 +33,8 @@ animation-duration: 3s;
 `
 
 const Logo = styled.div`
+  display: flex;
+  justify-content: center;
 
 `
 
