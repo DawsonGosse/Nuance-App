@@ -16,7 +16,7 @@ const Container = styled.div`
     align-items:center;
     flex-direction:column;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+
 `
 
 const DisagreeImg = styled.img`
