@@ -68,9 +68,8 @@ export default function HomePage() {
     <TextContainer>Based on your survey answers...</TextContainer>
     <TopicContainer>
       {obj.Economy === true && <TopicButtonLargeUI bannertext="Economy Question"></TopicButtonLargeUI>}
-      {obj.Gender === true && <TopicButtonLargeUI bannertext="Gender Question"></TopicButtonLargeUI>}
-      {obj.Healthcare === true && <TopicButtonLargeUI bannertext="Health Question"></TopicButtonLargeUI>}
-      {obj.Covid === true && <TopicButtonLargeUI bannertext="Covid Question"></TopicButtonLargeUI>}
+      {obj.Gender === true && <TopicButtonLargeUI bannertext="Economy Question"></TopicButtonLargeUI>}
+      {obj. === true && <TopicButtonLargeUI bannertext="Economy Question"></TopicButtonLargeUI>}
     </TopicContainer>
     <RandomContainer>
       <Line></Line>

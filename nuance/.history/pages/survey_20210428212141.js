@@ -132,11 +132,11 @@ export default function SurveyPage() {
           if(buttonstate4 === false)
           {
             Counter++
-            Selection.Covid= true
+            Selection.Economy= true
           }
           else{
             Counter--
-            Selection.Covid= false
+            Selection.Economy= false
           }
           if(Counter === 3)
           {
@@ -162,7 +162,7 @@ export default function SurveyPage() {
         <TopicButtonUI bannertext="Economy" src="/Topic1.png" onClick={HandleClickButtonColor1} bgcolor={buttonstate1 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="HealthCare" src="/Topic2.png" onClick={HandleClickButtonColor2} bgcolor={buttonstate2 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="GENDER" src="/Topic3.png"  onClick={HandleClickButtonColor3} bgcolor={buttonstate3 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
-        <TopicButtonUI bannertext="COVID-19" src="/Topic4.png" onClick={HandleClickButtonColor4} bgcolor={buttonstate4 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
+        <TopicButtonUI bannertext="COVID-19" src="/Topic4.png"></TopicButtonUI>
         <TopicButtonUI bannertext="VIOLENT CRIMES" src="/Topic5.png"></TopicButtonUI>
         <TopicButtonUI bannertext="FOREIGN POLICY" src="/Topic6.png"></TopicButtonUI>
         <TopicButtonUI bannertext="GUN POLICY" src="/Topic7.png"></TopicButtonUI>

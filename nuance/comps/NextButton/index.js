@@ -33,20 +33,20 @@ const Component6Cont = styled.div`
     user-select:none;
     `;
 
-const ButtonUI = ({
+const NextButtonUI = ({
     bgcolor='#3E3D46',
     text='NEXT',
     color='#fff',
-    routeTo='/home',
     hoverColor='#fff',
     opacity='100%',
     hoverColorBG='#8bb09c',
+    onClick=()=>{}
 }) => 
 {
     const router = useRouter();
-    return <Component6Cont hoverColorBG={hoverColorBG} opacity={opacity} hoverColor={hoverColor} color={color} bgcolor={bgcolor} onClick={()=>router.push(routeTo)}>
+    return <Component6Cont onClick={onClick} hoverColorBG={hoverColorBG} opacity={opacity} hoverColor={hoverColor} color={color} bgcolor={bgcolor}>
         <Component6Text>{text}</Component6Text>
     </Component6Cont>
 }
 
-export default ButtonUI;
+export default NextButtonUI;

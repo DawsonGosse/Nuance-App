@@ -41,10 +41,11 @@ const ButtonUI = ({
     hoverColor='#fff',
     opacity='100%',
     hoverColorBG='#8bb09c',
+    onClick=()=>{}
 }) => 
 {
     const router = useRouter();
-    return <Component6Cont hoverColorBG={hoverColorBG} opacity={opacity} hoverColor={hoverColor} color={color} bgcolor={bgcolor} onClick={()=>router.push(routeTo)}>
+    return <Component6Cont  onclickhoverColorBG={hoverColorBG} opacity={opacity} hoverColor={hoverColor} color={color} bgcolor={bgcolor} onClick={()=>router.push(routeTo)}>
         <Component6Text>{text}</Component6Text>
     </Component6Cont>
 }

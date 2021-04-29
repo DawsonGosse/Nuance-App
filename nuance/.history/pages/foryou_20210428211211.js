@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
-import {useEffect, useState} from 'react';
+import {useEffect} from 'react'
 import BannerUI from '../comps/Banner';
 import NavigationUI from '../comps/Navigation';
 import TopicButtonLargeUI from '../comps/TopicButtonLarge';
@@ -49,17 +49,17 @@ background-color:#D9D9D9;
 
 export default function HomePage() {
   const router = useRouter();
-  const[text, setText] = useState(null)
 
-
+  useEffect(()=>{
     if(process.browser){
        var o= sessionStorage.getItem('Selection');
        //setoptions(JSON.parse(o))
        var obj = JSON.parse(o);
-
-       
+       var key = obj.fruits+obj.coins+obj.colors
+       if(results[key]){setText(results.correct)} 
+       else(setText(results.wrong))
     }
-
+  }, []);
 
 
   return <Container>
@@ -67,10 +67,9 @@ export default function HomePage() {
     <HeaderContainer>Prompts from your favorite topics</HeaderContainer>
     <TextContainer>Based on your survey answers...</TextContainer>
     <TopicContainer>
-      {obj.Economy === true && <TopicButtonLargeUI bannertext="Economy Question"></TopicButtonLargeUI>}
-      {obj.Gender === true && <TopicButtonLargeUI bannertext="Gender Question"></TopicButtonLargeUI>}
-      {obj.Healthcare === true && <TopicButtonLargeUI bannertext="Health Question"></TopicButtonLargeUI>}
-      {obj.Covid === true && <TopicButtonLargeUI bannertext="Covid Question"></TopicButtonLargeUI>}
+      <TopicButtonLargeUI bannertext="Electric Vehicles"></TopicButtonLargeUI>
+      <TopicButtonLargeUI bannertext='Death Penalty'></TopicButtonLargeUI>
+      <TopicButtonLargeUI bannertext='Bitcoin & Ethereum'></TopicButtonLargeUI>
     </TopicContainer>
     <RandomContainer>
       <Line></Line>

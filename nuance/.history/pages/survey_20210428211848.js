@@ -47,14 +47,7 @@ let Selection = {
   Healthcare:false,
   Gender:false,
   Covid:false,
-  Violentcrimes:false,
-  Foreignpolicy:false,
-  Gunpolicy:false,
-  Ethicrace:false,
-  Climatechange:false,
-  Immigration:false,
-  Abortion:false,
-  Other:false,
+  
 }
 
 //Survey Page
@@ -126,28 +119,6 @@ export default function SurveyPage() {
         }
       }
 
-      const [buttonstate4, setButtonState4] = useState(false);  
-      const HandleClickButtonColor4 = () =>{
-          setButtonState4(!buttonstate4);
-          if(buttonstate4 === false)
-          {
-            Counter++
-            Selection.Covid= true
-          }
-          else{
-            Counter--
-            Selection.Covid= false
-          }
-          if(Counter === 3)
-          {
-            SetNextButton(true)
-          }
-          else{
-            SetNextButton(false)
-          }
-        }
-  
-
     const HandleNext= () =>{
       sessionStorage.setItem('Selection', JSON.stringify(Selection))
       router.push('/home')
@@ -162,7 +133,7 @@ export default function SurveyPage() {
         <TopicButtonUI bannertext="Economy" src="/Topic1.png" onClick={HandleClickButtonColor1} bgcolor={buttonstate1 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="HealthCare" src="/Topic2.png" onClick={HandleClickButtonColor2} bgcolor={buttonstate2 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="GENDER" src="/Topic3.png"  onClick={HandleClickButtonColor3} bgcolor={buttonstate3 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
-        <TopicButtonUI bannertext="COVID-19" src="/Topic4.png" onClick={HandleClickButtonColor4} bgcolor={buttonstate4 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
+        <TopicButtonUI bannertext="COVID-19" src="/Topic4.png"></TopicButtonUI>
         <TopicButtonUI bannertext="VIOLENT CRIMES" src="/Topic5.png"></TopicButtonUI>
         <TopicButtonUI bannertext="FOREIGN POLICY" src="/Topic6.png"></TopicButtonUI>
         <TopicButtonUI bannertext="GUN POLICY" src="/Topic7.png"></TopicButtonUI>
