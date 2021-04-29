@@ -42,8 +42,6 @@ text-align:center;
 //Variables
 let Counter = 0
 
-
-//Survey Page
 export default function SurveyPage() {
   
     const [NextButton, SetNextButton] = useState(false);

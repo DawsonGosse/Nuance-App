@@ -41,7 +41,9 @@ text-align:center;
 `
 //Variables
 let Counter = 0
-
+var Selection ={
+  option1:
+}
 
 //Survey Page
 export default function SurveyPage() {

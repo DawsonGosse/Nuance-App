@@ -39,11 +39,9 @@ const TextCont = styled.p`
 text-align:center;
 
 `
-//Variables
+//Variable
 let Counter = 0
 
-
-//Survey Page
 export default function SurveyPage() {
   
     const [NextButton, SetNextButton] = useState(false);

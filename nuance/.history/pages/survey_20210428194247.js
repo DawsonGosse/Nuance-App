@@ -6,7 +6,7 @@ import TopicButtonUI from '../comps/TopicButton(survey)';
 import ButtonUI from '../comps/Button';
 import {useState} from 'react';
 
-//Styled Comps
+
 const Container = styled.div`
 width:100%;
 height:100%;
@@ -35,74 +35,63 @@ flex-direction:row;
 margin-bottom:0px
 `
 const TextCont = styled.p`
-
-text-align:center;
+display:flex;
 
 `
-//Variables
 let Counter = 0
 
-
-//Survey Page
 export default function SurveyPage() {
-  
-    const [NextButton, SetNextButton] = useState(false);
     const [buttonstate1, setButtonState1] = useState(false);  
+    
     const HandleClickButtonColor1 = () =>{
         setButtonState1(!buttonstate1);
         if(buttonstate1 === false)
         {
           Counter++
+          console.log(Counter)
         }
         else{
           Counter--
-        }
-        if(Counter === 3)
-        {
-          SetNextButton(true)
-        }
-        else{
-          SetNextButton(false)
+          console.log(Counter)
         }
       }
-
-    const [buttonstate2, setButtonState2] = useState(false);   
+    const [buttonstate2, setButtonState2] = useState(false);  
+    
     const HandleClickButtonColor2= () =>{
         setButtonState2(!buttonstate2);
         if(buttonstate2 === false)
         {
           Counter++
+          console.log(Counter)
         }
         else{
           Counter--
-        }
-        if(Counter === 3)
-        {
-          SetNextButton(true)
-        }
-        else{
-          SetNextButton(false)
+          console.log(Counter)
         }
       }
-
     const [buttonstate3, setButtonState3] = useState(false);  
+    
     const HandleClickButtonColor3= () =>{
-        setButtonState3(!buttonstate3);
-        if(buttonstate3 === false)
+          setButtonState3(!buttonstate3);
+          if(buttonstate3 === false)
         {
           Counter++
+          console.log(Counter)
         }
         else{
           Counter--
+          console.log(Counter)
         }
-        if(Counter === 3)
-        {
-          SetNextButton(true)
         }
-        else{
-          SetNextButton(false)
-        }
-      }
+
+    const [NextButton, SetNextButton] = useState(false);
+
+    if(Counter === 3)
+    {
+    }
+    else{
+
+    }
 
   const router = useRouter();
   return <Container>
@@ -125,8 +114,6 @@ export default function SurveyPage() {
     </RowCont>
     <ButtonCont>
         {NextButton === true && <ButtonUI routeTo="/home"></ButtonUI>}
-        {NextButton === false && <TextCont>Please Pick Three Categories Before Continuing</TextCont>}
-        {NextButton === false && <ButtonUI hoverColorBG="#3E3D46" opacity="30%" routeTo=""></ButtonUI>}
     </ButtonCont>
   </Container>
 }

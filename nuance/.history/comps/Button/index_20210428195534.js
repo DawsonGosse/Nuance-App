@@ -15,8 +15,8 @@ const Component6Cont = styled.div`
     opacity:${props=>props.opacity};
 
     &:hover {
-        background-color:${props=>props.hoverColorBG};
-        border:2px solid ${props=>props.hoverColorBG};
+        background-color:${props=>props.hoverColor};
+        border:2px solid #8bb09c;
         color:${props=>props.hoverColor};
     }
     `;
@@ -44,7 +44,7 @@ const ButtonUI = ({
 }) => 
 {
     const router = useRouter();
-    return <Component6Cont hoverColorBG={hoverColorBG} opacity={opacity} hoverColor={hoverColor} color={color} bgcolor={bgcolor} onClick={()=>router.push(routeTo)}>
+    return <Component6Cont opacity={opacity} hoverColor={hoverColor} color={color} bgcolor={bgcolor} onClick={()=>router.push(routeTo)}>
         <Component6Text>{text}</Component6Text>
     </Component6Cont>
 }

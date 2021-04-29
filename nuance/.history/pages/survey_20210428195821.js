@@ -6,7 +6,7 @@ import TopicButtonUI from '../comps/TopicButton(survey)';
 import ButtonUI from '../comps/Button';
 import {useState} from 'react';
 
-//Styled Comps
+
 const Container = styled.div`
 width:100%;
 height:100%;
@@ -35,15 +35,12 @@ flex-direction:row;
 margin-bottom:0px
 `
 const TextCont = styled.p`
-
-text-align:center;
+display:flex;
+align-items:center;
 
 `
-//Variables
 let Counter = 0
 
-
-//Survey Page
 export default function SurveyPage() {
   
     const [NextButton, SetNextButton] = useState(false);
@@ -53,9 +50,11 @@ export default function SurveyPage() {
         if(buttonstate1 === false)
         {
           Counter++
+          console.log(Counter)
         }
         else{
           Counter--
+          console.log(Counter)
         }
         if(Counter === 3)
         {
@@ -72,9 +71,11 @@ export default function SurveyPage() {
         if(buttonstate2 === false)
         {
           Counter++
+          console.log(Counter)
         }
         else{
           Counter--
+          console.log(Counter)
         }
         if(Counter === 3)
         {
@@ -91,9 +92,11 @@ export default function SurveyPage() {
         if(buttonstate3 === false)
         {
           Counter++
+          console.log(Counter)
         }
         else{
           Counter--
+          console.log(Counter)
         }
         if(Counter === 3)
         {
@@ -103,6 +106,9 @@ export default function SurveyPage() {
           SetNextButton(false)
         }
       }
+
+
+
 
   const router = useRouter();
   return <Container>

@@ -12,11 +12,10 @@ const Component6Cont = styled.div`
     justify-content: center;
     align-items: center;    
     color: ${props=>props.color};
-    opacity:${props=>props.opacity};
 
     &:hover {
-        background-color:${props=>props.hoverColorBG};
-        border:2px solid ${props=>props.hoverColorBG};
+        background-color:#8bb09c;
+        border:2px solid #8bb09c;
         color:${props=>props.hoverColor};
     }
     `;
@@ -39,12 +38,11 @@ const ButtonUI = ({
     color='#fff',
     routeTo='/home',
     hoverColor='#fff',
-    opacity='100%',
-    hoverColorBG='#8bb09c'
+    opacity='100%'
 }) => 
 {
     const router = useRouter();
-    return <Component6Cont hoverColorBG={hoverColorBG} opacity={opacity} hoverColor={hoverColor} color={color} bgcolor={bgcolor} onClick={()=>router.push(routeTo)}>
+    return <Component6Cont hoverColor={hoverColor} color={color} bgcolor={bgcolor} onClick={()=>router.push(routeTo)}>
         <Component6Text>{text}</Component6Text>
     </Component6Cont>
 }
