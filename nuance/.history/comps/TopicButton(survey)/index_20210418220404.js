@@ -13,11 +13,6 @@ const Component7Cont = styled.div
     background-color: black;
     border-radius: 3px;
     margin:9px;
-
-    &:hover
-    {
-        transform: scale(1.02);
-    }
 `;
 
 const Component7Img = styled.img                 // put image in public folder
