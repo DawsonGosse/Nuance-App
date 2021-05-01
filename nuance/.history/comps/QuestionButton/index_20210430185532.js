@@ -26,7 +26,6 @@ const Component5Text = styled.h2`
     color: #3E3D46;
     margin:0px 0px 0px 52px;
     white-space:nowrap;
-    user-select:none;
 `
 
 const Component5Arrow = styled.img`
@@ -45,6 +44,9 @@ const IconFlexCont = styled.div`
     justify-content:flex-end;
     flex:1;
 
+    &:hover{
+        color:red;
+    }
 `
 
 const QuestionButtonUI = ({
