@@ -2,9 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 import BannerBackUI from '../comps/Banner(BackButton)';
-import TopicButtonUI from '../comps/TopicButton(survey)';
 import ButtonAUI from '../comps/Button(Absolute)';
-import QuestionCardUI from '../comps/QuestionCard';
 import NavigationUI from '../comps/Navigation';
 
 const Container = styled.div`
