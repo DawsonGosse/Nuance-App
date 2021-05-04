@@ -26,7 +26,7 @@ color: #3E3D46;
     
 `
 const Icon = styled.img`
-margin:0px 0px 24px 0px;
+margin:20px 0px 24px 0px;
     
 `
 const Line = styled.div`

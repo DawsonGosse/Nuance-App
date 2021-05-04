@@ -43,8 +43,8 @@ export default function HomePage() {
     <HelpButtonUI></HelpButtonUI>
     <BannerUI></BannerUI>
     <QuestionCardUI headertext="Daliy Topic" bodytext="General Motors has joined a list of growing companies to mandate that all their vehicles be electric by a certain date. Governments too, motivated 
-by..." subheadertext="Electric Vehicle debate" src="/CarImage.jpg" bgcolor="#8BB09C" linecolor='#8BB09C' lineleft='0px' headingalign='right' headercolor='#8BB09C' routeTo="/questionprompt"></QuestionCardUI>
-    <QuestionCardUI linewidth='140px' lineleft='197px' routeTo='/questionprompt/Electric vehicles are a better option'></QuestionCardUI>
+by..." subheadertext="Electric Vehicle debate" src="/CarImage.jpg" bgcolor="#8BB09C" linecolor='#8BB09C' lineleft='0px' headingalign='right' headercolor='#8BB09C' routeTo='/questionprompt/Electric vehicles are a better option'></QuestionCardUI>
+    <QuestionCardUI linewidth='140px' lineleft='197px'></QuestionCardUI>
     <NavigationUI Iconcolor1="#8BB09C"></NavigationUI>
   </Container>
 }
