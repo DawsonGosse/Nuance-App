@@ -6,6 +6,7 @@ import BannerUI from '../comps/Banner';
 import NavigationUI from '../comps/Navigation';
 import TopicButtonLargeUI from '../comps/TopicButtonLarge';
 import RandomButtonUI from '../comps/RandomizeButton';
+import HelpButtonUI from '../comps/HelpButton';
 
 const Container = styled.div`
 width:100%;
@@ -64,14 +65,15 @@ export default function ForYou() {
 
 
   return <Container>
+    <HelpButtonUI></HelpButtonUI>
     <BannerUI></BannerUI>
     <HeaderContainer>Prompts from your favorite topics</HeaderContainer>
     <TextContainer>Based on your survey answers...</TextContainer>
     <TopicContainer>
-      {obj.Economy === true && <TopicButtonLargeUI bannertext="Economy Question"></TopicButtonLargeUI>}
+      {obj.Economy === true && <TopicButtonLargeUI bannertext="Economy Question" onClick={()=>router.push('/questionprompt/Electric vehicles are a better option')}></TopicButtonLargeUI>}
       {obj.Gender === true && <TopicButtonLargeUI bannertext="Gender Question"></TopicButtonLargeUI>}
-      {obj.Healthcare === true && <TopicButtonLargeUI bannertext="Health Question"></TopicButtonLargeUI>}
-      {obj.Covid === true && <TopicButtonLargeUI bannertext="Covid Question"></TopicButtonLargeUI>}
+      {obj.Healthcare === true && <TopicButtonLargeUI bannertext="Health Question" onClick={()=>router.push('/questionprompt/COVID lock-downs are necessary and beneficial')}></TopicButtonLargeUI>}
+      {obj.Covid === true && <TopicButtonLargeUI bannertext="Covid Question" onClick={()=>router.push('/questionprompt/COVID lock-downs are necessary and beneficial')}></TopicButtonLargeUI>}
     </TopicContainer>
     <RandomContainer>
       <Line></Line>

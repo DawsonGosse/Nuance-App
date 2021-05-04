@@ -5,6 +5,7 @@ import BannerUI from '../comps/Banner';
 import TopicButtonUI from '../comps/TopicButton';
 import NavigationUI from '../comps/Navigation';
 import { useEffect, useState } from 'react';
+import HelpButtonUI from '../comps/HelpButton';
 
 const Container = styled.div`
 width:100%;
@@ -30,6 +31,7 @@ export default function CategoriesPage() {
 
 
   return <Container>
+    <HelpButtonUI></HelpButtonUI>
     <BannerUI></BannerUI>
     <RowCont>
         <TopicButtonUI bannertext="economy" src="/Topic1.png" onClick={()=>router.push('/topic/economy')}></TopicButtonUI>

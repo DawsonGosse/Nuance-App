@@ -6,6 +6,7 @@ import TopicHeaderUI from '../../comps/TopicHeader';
 import QuestionButton from '../../comps/QuestionButton';
 import NavigationUI from '../../comps/Navigation';
 import { useEffect, useState } from 'react';
+import HelpButtonUI from '../../comps/HelpButton';
 
 const Container = styled.div`
 width:100%;
@@ -21,6 +22,7 @@ const Text = styled.p`
 font-size:14px;
 margin:51px 0px 6px 0px;
 text-align:center;
+color: #3E3D46;
     
 `
 const Icon = styled.img`
@@ -148,16 +150,19 @@ export default function Topics() {
 
     console.log(questiontext.question2)
     return <Container>
-    <BannerBackUI></BannerBackUI>
-    <TopicHeaderUI bannertext={header.text} src={header.src}></TopicHeaderUI>
-    <Text>Pick a Prompt that interests you</Text>
-    <Icon src='/ArrowDown.png'></Icon>
-    <QuestionButton text={questiontext.question1} routeTo={routing.path1}></QuestionButton>
-    {questiontext.question2 !== 'null' && <QuestionButton text={questiontext.question2} routeTo={routing.path2}></QuestionButton>}
-    {questiontext.question3 !== 'null' && <QuestionButton text={questiontext.question3} routeTo={routing.path3}></QuestionButton>}
-    {questiontext.question4 !== 'null' && <QuestionButton text={questiontext.question4} routeTo={routing.path4}></QuestionButton>}
-    <Line></Line>
-    <Text>Stay Tuned! We are always adding <br></br> new prompts for you to look at!</Text>
-    <NavigationUI></NavigationUI>
+        
+        <BannerBackUI>
+            <HelpButtonUI></HelpButtonUI>
+        </BannerBackUI>
+        <TopicHeaderUI bannertext={header.text} src={header.src}></TopicHeaderUI>
+        <Text>Pick a Prompt that interests you</Text>
+        <Icon src='/ArrowDown.png'></Icon>
+        <QuestionButton text={questiontext.question1} routeTo={routing.path1}></QuestionButton>
+        {questiontext.question2 !== 'null' && <QuestionButton text={questiontext.question2} routeTo={routing.path2}></QuestionButton>}
+        {questiontext.question3 !== 'null' && <QuestionButton text={questiontext.question3} routeTo={routing.path3}></QuestionButton>}
+        {questiontext.question4 !== 'null' && <QuestionButton text={questiontext.question4} routeTo={routing.path4}></QuestionButton>}
+        <Line></Line>
+        <Text>Stay Tuned! We are always adding <br></br> new prompts for you to look at!</Text>
+        <NavigationUI></NavigationUI>
   </Container>
 }
