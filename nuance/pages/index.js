@@ -1,45 +1,45 @@
-import React from 'react';
-import styled from 'styled-components';
-import LogoUI from '../comps/Logo';
-import {useRouter} from 'next/router';
-import ButtonUI from '../comps/Button';
-import BlobBig from '../comps/BlobBig';
-import BlobSmall from '../comps/BlobSmall';
+import React from 'react'
+import styled from 'styled-components'
+import {useRouter} from 'next/router'
+import ButtonUI from '../comps/Button'
+import BlobBig from '../comps/BlobBig'
+import BlobSmall from '../comps/BlobSmall'
+import AboutButtonUI from '../comps/AboutButton'
 
 const Container = styled.div`
-width:100vw;
-height:100vh;
-display:flex;
-justify-content:flex-end;
-align-items:center;
-flex-direction:column;
-overflow: hidden;
-position:relative;
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  flex-direction:column;
+  overflow: hidden;
+  position:relative;
 `
 
 const ButtonContainer =styled.div`
-display:flex;
-width:100vw;
-height:200px;
-justify-content:space-evenly;
-align-items:center;
-flex-direction:column;
-margin-top:200px;
-margin-bottom:20px;
-animation-name: FadeIn;
-animation-iteration-count: 1;
-animation-timing-function: ease-in;
-animation-duration: 3s;
+  display:flex;
+  width:100vw;
+  height:200px;
+  justify-content:space-evenly;
+  align-items:center;
+  flex-direction:column;
+  margin-top:200px;
+  margin-bottom:20px;
+  animation-name: FadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
 `
 
 const Logo = styled.div`
   display: flex;
   justify-content: center;
-
 `
 
 export default function LandingPage() {
   return <Container>
+    <AboutButtonUI></AboutButtonUI>
     <BlobBig></BlobBig>
     <BlobSmall></BlobSmall>
     <Logo><svg width="338" height="332" viewBox="0 0 338 332" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,7 @@ export default function LandingPage() {
 </Logo>
     <ButtonContainer>
       <ButtonUI text='GET STARTED' routeTo='/survey'></ButtonUI>
-      <ButtonUI hoverColor='#fff'text='HOW IT WORKS' bgcolor='none' color='#3E3D46'></ButtonUI>
+      <ButtonUI hoverColor='#fff'text='HOW IT WORKS' bgcolor='none' color='#3E3D46' routeTo='/help'></ButtonUI>
     </ButtonContainer>
   </Container>
 }

@@ -54,10 +54,11 @@ const TopicButtonLargeUI = ({
     bgcolor='#ECCD97',
     src='/CarForYou.png',
     bannertext='next',    
+    onClick=()=>{},
 }) => 
 
 {
-    return <Component8Cont>
+    return <Component8Cont onClick={onClick}>
         <Component8Img src={src}></Component8Img>
         <Component8Banner bgcolor={bgcolor}>
             <Component8BannerText>{bannertext}</Component8BannerText>
