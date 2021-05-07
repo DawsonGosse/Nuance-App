@@ -5,7 +5,6 @@ import BannerUI from '../comps/Banner'
 import QuestionCardUI from '../comps/QuestionCard'
 import NavigationUI from '../comps/Navigation'
 import HelpButtonUI from '../comps/HelpButton'
-import RandomButtonUI from '../comps/RandomizeButton';
 
 const Container = styled.div`
   width:100%;
@@ -38,23 +37,10 @@ const TextCont = styled.p`
   display:flex;
 `
 
-const RandomContainer = styled.div`
-width:100%;
-height:138px;
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-`
-
 const Line = styled.div`
 width:100%;
 height:1px;
 background-color:#D9D9D9;
-`
-
-const TextContainer = styled.p`
-font-size:13px;
 `
 
 export default function HomePage() {

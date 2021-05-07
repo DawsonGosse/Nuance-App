@@ -5,7 +5,6 @@ import BannerUI from '../comps/Banner'
 import QuestionCardUI from '../comps/QuestionCard'
 import NavigationUI from '../comps/Navigation'
 import HelpButtonUI from '../comps/HelpButton'
-import RandomButtonUI from '../comps/RandomizeButton';
 
 const Container = styled.div`
   width:100%;
