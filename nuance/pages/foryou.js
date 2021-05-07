@@ -65,7 +65,6 @@ export default function ForYou() {
 
 
   return <Container>
-    <HelpButtonUI></HelpButtonUI>
     <BannerUI></BannerUI>
     <HeaderContainer>Prompts from your favorite topics</HeaderContainer>
     <TextContainer>Based on your survey answers...</TextContainer>

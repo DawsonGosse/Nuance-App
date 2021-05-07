@@ -31,7 +31,6 @@ export default function CategoriesPage() {
 
 
   return <Container>
-    <HelpButtonUI></HelpButtonUI>
     <BannerUI></BannerUI>
     <RowCont>
         <TopicButtonUI bannertext="economy" src="/Topic1.png" onClick={()=>router.push('/topic/economy')}></TopicButtonUI>
