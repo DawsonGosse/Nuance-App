@@ -161,7 +161,7 @@ export default function SurveyPage() {
     <RowCont>
         <TopicButtonUI bannertext="Economy" src="/Topic1.png" onClick={HandleClickButtonColor1} bgcolor={buttonstate1 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="HealthCare" src="/Topic2.png" onClick={HandleClickButtonColor2} bgcolor={buttonstate2 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
-        <TopicButtonUI bannertext="GENDER" src="/Topic3.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
+        <TopicButtonUI bannertext="GENDER" src="/Topic3.png"  onClick={HandleClickButtonColor3} bgcolor={buttonstate3 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="COVID-19" src="/Topic4.png" onClick={HandleClickButtonColor4} bgcolor={buttonstate4 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="VIOLENT CRIMES" src="/Topic5.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="FOREIGN POLICY" src="/Topic6.png" ></TopicButtonUI>
@@ -169,7 +169,7 @@ export default function SurveyPage() {
         <TopicButtonUI bannertext="ETHNIC & RACE" src="/Topic8.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="CLIMATE CHANGE" src="/Topic9.png"></TopicButtonUI>
         <TopicButtonUI bannertext="IMMIGRATION" src="/Topic10.png"></TopicButtonUI>
-        <TopicButtonUI bannertext="ABORTION" src="/Topic11.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
+        <TopicButtonUI bannertext="ABORTION" src="/Topic11.png"></TopicButtonUI>
         <TopicButtonUI bannertext="OTHER" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
     </RowCont>
     <ButtonCont>

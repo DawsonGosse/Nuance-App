@@ -14,7 +14,6 @@ const Component7Cont = styled.div
     background-color: black;
     border-radius: 3px;
     margin:9px;
-    position:relative;
 
     &:hover
     {
@@ -59,12 +58,7 @@ const InactiveText = styled.p`
     font-style: italic;
     font-weight: bold;
     font-size: 18px;
-    color:#FFF;
     display:${props=>props.inactivetext};
-    position:absolute;
-    left:15px;
-    top:35px;
-    z-index:2;
 `
 
 const TopicButtonUI = ({     
@@ -80,7 +74,7 @@ const TopicButtonUI = ({
 {
     const router = useRouter();
     return <Component7Cont onClick={onClick}>
-        <InactiveText inactivetext={inactivetext}>COMMING SOON</InactiveText>
+        <InactiveText inactivetext={inactivetext}>C</InactiveText>
         <Component7Img inactive={inactive} src={src}></Component7Img>
         <Component7Banner text={text} bgcolor={bgcolor}>
             {bannertext}

@@ -36,7 +36,7 @@ export default function CategoriesPage() {
     <RowCont>
         <TopicButtonUI bannertext="economy" src="/Topic1.png" onClick={()=>router.push('/topic/economy')}></TopicButtonUI>
         <TopicButtonUI bannertext="healthcare" src="/Topic2.png" onClick={()=>router.push('/topic/healthcare')}></TopicButtonUI>
-        <TopicButtonUI bannertext="gender" src="/Topic3.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
+        <TopicButtonUI bannertext="gender" src="/Topic3.png" inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="covid-19" src="/Topic4.png" onClick={()=>router.push('/topic/covid-19')}></TopicButtonUI>
         <TopicButtonUI bannertext="violent crimes" src="/Topic5.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="foreign policy" src="/Topic6.png" onClick={()=>router.push('/topic/foreign-policy')}></TopicButtonUI>

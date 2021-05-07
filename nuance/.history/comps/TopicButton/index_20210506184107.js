@@ -74,7 +74,7 @@ const TopicButtonUI = ({
     bannertext='Topic Title', 
     routeTo='/home',
     inactive='grayscale(0%)',
-    inactivetext='none',
+    inactivetext='block',
     onClick=()=>{}
 }) => 
 {

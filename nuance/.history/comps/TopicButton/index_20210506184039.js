@@ -59,11 +59,11 @@ const InactiveText = styled.p`
     font-style: italic;
     font-weight: bold;
     font-size: 18px;
-    color:#FFF;
+    font-color:#FFF;
     display:${props=>props.inactivetext};
     position:absolute;
     left:15px;
-    top:35px;
+    top:20px;
     z-index:2;
 `
 
@@ -74,7 +74,7 @@ const TopicButtonUI = ({
     bannertext='Topic Title', 
     routeTo='/home',
     inactive='grayscale(0%)',
-    inactivetext='none',
+    inactivetext='block',
     onClick=()=>{}
 }) => 
 {

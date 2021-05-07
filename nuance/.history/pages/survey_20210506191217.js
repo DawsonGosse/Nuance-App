@@ -160,8 +160,8 @@ export default function SurveyPage() {
     <TextCont>that you would like to focus on today.</TextCont>
     <RowCont>
         <TopicButtonUI bannertext="Economy" src="/Topic1.png" onClick={HandleClickButtonColor1} bgcolor={buttonstate1 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
-        <TopicButtonUI bannertext="HealthCare" src="/Topic2.png" onClick={HandleClickButtonColor2} bgcolor={buttonstate2 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
-        <TopicButtonUI bannertext="GENDER" src="/Topic3.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
+        <TopicButtonUI bannertext="HealthCare" src="/Topic2.png" inactive='grayscale(100%)' text='#999999' inactivetext="block" onClick={HandleClickButtonColor2} bgcolor={buttonstate2 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
+        <TopicButtonUI bannertext="GENDER" src="/Topic3.png"  onClick={HandleClickButtonColor3} bgcolor={buttonstate3 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="COVID-19" src="/Topic4.png" onClick={HandleClickButtonColor4} bgcolor={buttonstate4 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="VIOLENT CRIMES" src="/Topic5.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="FOREIGN POLICY" src="/Topic6.png" ></TopicButtonUI>

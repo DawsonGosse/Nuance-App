@@ -14,7 +14,6 @@ const Component7Cont = styled.div
     background-color: black;
     border-radius: 3px;
     margin:9px;
-    position:relative;
 
     &:hover
     {
@@ -24,7 +23,7 @@ const Component7Cont = styled.div
 
 const Component7Img = styled.img                 // put image in public folder
 `       
-    filter:${props=>props.inactive};
+    filter:${props=>props.inactive}
 `;
 
 const Component7Banner = styled.div       
@@ -49,40 +48,21 @@ const Component7Banner = styled.div
     font-style: italic;
     font-weight: bold;
     font-size: 18px;
-    color: ${props=>props.text};
+    color: #FFFFFF;
 `;
-
-const InactiveText = styled.p`
-    @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); 
-    font-family: 'Arimo', sans-serif;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 18px;
-    color:#FFF;
-    display:${props=>props.inactivetext};
-    position:absolute;
-    left:15px;
-    top:35px;
-    z-index:2;
-`
 
 const TopicButtonUI = ({     
     bgcolor='#3E3D46',
-    text='#FFFFFF',
     src='/topic_image.png',
     bannertext='Topic Title', 
     routeTo='/home',
-    inactive='grayscale(0%)',
-    inactivetext='none',
     onClick=()=>{}
 }) => 
 {
     const router = useRouter();
     return <Component7Cont onClick={onClick}>
-        <InactiveText inactivetext={inactivetext}>COMMING SOON</InactiveText>
-        <Component7Img inactive={inactive} src={src}></Component7Img>
-        <Component7Banner text={text} bgcolor={bgcolor}>
+        <Component7Img src={src}></Component7Img>
+        <Component7Banner bgcolor={bgcolor}>
             {bannertext}
         </Component7Banner>
     </Component7Cont>

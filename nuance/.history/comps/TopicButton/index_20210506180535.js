@@ -14,7 +14,7 @@ const Component7Cont = styled.div
     background-color: black;
     border-radius: 3px;
     margin:9px;
-    position:relative;
+    position:;
 
     &:hover
     {
@@ -59,12 +59,10 @@ const InactiveText = styled.p`
     font-style: italic;
     font-weight: bold;
     font-size: 18px;
-    color:#FFF;
+    font-color:#FFF;
     display:${props=>props.inactivetext};
     position:absolute;
-    left:15px;
-    top:35px;
-    z-index:2;
+    left:10px;
 `
 
 const TopicButtonUI = ({     
@@ -74,7 +72,7 @@ const TopicButtonUI = ({
     bannertext='Topic Title', 
     routeTo='/home',
     inactive='grayscale(0%)',
-    inactivetext='none',
+    inactivetext='block',
     onClick=()=>{}
 }) => 
 {

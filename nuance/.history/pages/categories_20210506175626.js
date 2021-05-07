@@ -36,16 +36,16 @@ export default function CategoriesPage() {
     <RowCont>
         <TopicButtonUI bannertext="economy" src="/Topic1.png" onClick={()=>router.push('/topic/economy')}></TopicButtonUI>
         <TopicButtonUI bannertext="healthcare" src="/Topic2.png" onClick={()=>router.push('/topic/healthcare')}></TopicButtonUI>
-        <TopicButtonUI bannertext="gender" src="/Topic3.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
+        <TopicButtonUI bannertext="gender" src="/Topic3.png"></TopicButtonUI>
         <TopicButtonUI bannertext="covid-19" src="/Topic4.png" onClick={()=>router.push('/topic/covid-19')}></TopicButtonUI>
-        <TopicButtonUI bannertext="violent crimes" src="/Topic5.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
+        <TopicButtonUI bannertext="violent crimes" src="/Topic5.png" inactive='grayscale(100%)' text='#585858'></TopicButtonUI>
         <TopicButtonUI bannertext="foreign policy" src="/Topic6.png" onClick={()=>router.push('/topic/foreign-policy')}></TopicButtonUI>
-        <TopicButtonUI bannertext="gun policy" src="/Topic7.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
-        <TopicButtonUI bannertext="ethnic & race" src="/Topic8.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
+        <TopicButtonUI bannertext="gun policy" src="/Topic7.png" inactive='grayscale(100%)' text='#999999'></TopicButtonUI>
+        <TopicButtonUI bannertext="ethnic & race" src="/Topic8.png" inactive='grayscale(100%)' text='#999999'></TopicButtonUI>
         <TopicButtonUI bannertext="climate change" src="/Topic9.png" onClick={()=>router.push('/topic/climate-change')}></TopicButtonUI>
         <TopicButtonUI bannertext="immigration" src="/Topic10.png" onClick={()=>router.push('/topic/immigration')}></TopicButtonUI>
-        <TopicButtonUI bannertext="abortion" src="/Topic11.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
-        <TopicButtonUI bannertext="other" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
+        <TopicButtonUI bannertext="abortion" src="/Topic11.png" inactive='grayscale(100%)' text='#999999'></TopicButtonUI>
+        <TopicButtonUI bannertext="other" inactive='grayscale(100%)' text='#999999'></TopicButtonUI>
 
     </RowCont>
     <NavigationUI Iconcolor3="#8BB09C"></NavigationUI>
