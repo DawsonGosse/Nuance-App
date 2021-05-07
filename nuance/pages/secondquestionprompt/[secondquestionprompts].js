@@ -31,7 +31,7 @@ const Img = styled.img
 `
 const Text = styled.h3
 `
-padding:20px;
+margin: 20px;
 font-size:30px;
 font-weight:bold;
 color:white;
@@ -42,6 +42,7 @@ position:absolute
 `
 const SubText = styled.p
 `
+margin-top: 20px;
 font-size:14px;
 position:absolute;
 text-align:center;
@@ -82,7 +83,7 @@ export default function SecondQuestionPrompts() {
     if(secondquestionprompts === 'Universal Basic Income could solve poverty')
     {
         secondquestionpromptdata.questiontext ='Universal Basic Income could solve poverty'
-        secondquestionpromptdata.questionimg = '/CarImage1.png'
+        secondquestionpromptdata.questionimg = '/ui_income_image.png'
     }
 
     return <Container>

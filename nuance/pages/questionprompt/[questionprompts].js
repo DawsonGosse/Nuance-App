@@ -81,7 +81,7 @@ export default function QuestionPrompts() {
     if(questionprompts === 'Universal Basic Income could solve poverty')
     {
         questionpromptdata.questiontext ='Universal Basic Income could solve poverty'
-        questionpromptdata.questionimg = '/CarImage1.png'
+        questionpromptdata.questionimg = '/ui_income_image.png'
         questionpromptdata.agreesrc = '/disagree/Universal Basic Income could solve poverty'
         questionpromptdata.disagreesrc = '/agree/Universal Basic Income could solve poverty'
     }
