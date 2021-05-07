@@ -5,6 +5,7 @@ import {useEffect, useState} from 'react';
 import BannerUI from '../comps/Banner';
 import NavigationUI from '../comps/Navigation';
 import PromptCardUI from '../comps/ForYouPageCard';
+import RandomButtonUI from '../comps/RandomizeButton';
 import HelpButtonUI from '../comps/HelpButton';
 
 const Container = styled.div`
@@ -23,7 +24,7 @@ width:100%;
 height:550px;
 display:flex;
 align-items:center;
-justify-content:;
+justify-content:space-evenly;
 flex-direction:column;
 `
 const HeaderContainer = styled.h2`
@@ -35,6 +36,8 @@ const TextContainer = styled.p`
 font-size:13px;
 `
 
+
+
 export default function ForYou() {
 
   return <Container>
@@ -44,8 +47,8 @@ export default function ForYou() {
     <TextContainer>Based on your survey answers...</TextContainer>
     <TopicContainer>
       <PromptCardUI headertext='Covid-19' bodytext='COVID lock-down mandates are necessary and beneficial.' src='/ForYouPromptCOVID.png'></PromptCardUI>
-      <PromptCardUI headertext='Foreign Policy' bodytext='Countries should have open borders.' src='/ForYouPromptFOREIGN.png'></PromptCardUI>
-      <PromptCardUI headertext='Economy' bodytext='Universal Basic Income could solve poverty.' src='/ForYouPromptECON.png'></PromptCardUI>
+ <PromptCardUI headertext='Covid-19' bodytext='COVID lock-down mandates are necessary and beneficial.' src='/ForYouPromptCOVID.png'></PromptCardUI>
+ <PromptCardUI headertext='Covid-19' bodytext='COVID lock-down mandates are necessary and beneficial.' src='/ForYouPromptCOVID.png'></PromptCardUI>
     </TopicContainer>
     <NavigationUI Iconcolor2="#8BB09C"></NavigationUI>
   </Container>
