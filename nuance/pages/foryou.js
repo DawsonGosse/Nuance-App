@@ -4,8 +4,7 @@ import {useRouter} from 'next/router';
 import {useEffect, useState} from 'react';
 import BannerUI from '../comps/Banner';
 import NavigationUI from '../comps/Navigation';
-import TopicButtonLargeUI from '../comps/TopicButtonLarge';
-import RandomButtonUI from '../comps/RandomizeButton';
+import PromptCardUI from '../comps/ForYouPageCard';
 import HelpButtonUI from '../comps/HelpButton';
 
 const Container = styled.div`
@@ -24,7 +23,7 @@ width:100%;
 height:550px;
 display:flex;
 align-items:center;
-justify-content:space-evenly;
+justify-content:;
 flex-direction:column;
 `
 const HeaderContainer = styled.h2`
@@ -35,50 +34,18 @@ margin:0px;
 const TextContainer = styled.p`
 font-size:13px;
 `
-const RandomContainer = styled.div`
-width:100%;
-height:138px;
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-`
-const Line = styled.div`
-width:100%;
-height:1px;
-background-color:#D9D9D9;
-`
 
 export default function ForYou() {
-  const router = useRouter();
-  const[text, setText] = useState(null)
-
-
-    if(process.browser){
-       var o= sessionStorage.getItem('Selection');
-       //setoptions(JSON.parse(o))
-       var obj = JSON.parse(o);
-
-       
-    }
-
-
 
   return <Container>
     <BannerUI></BannerUI>
     <HeaderContainer>Prompts from your favorite topics</HeaderContainer>
     <TextContainer>Based on your survey answers...</TextContainer>
     <TopicContainer>
-      {obj.Economy === true && <TopicButtonLargeUI bannertext="Economy Question" onClick={()=>router.push('/questionprompt/Electric vehicles are a better option')}></TopicButtonLargeUI>}
-      {obj.Gender === true && <TopicButtonLargeUI bannertext="Gender Question"></TopicButtonLargeUI>}
-      {obj.Healthcare === true && <TopicButtonLargeUI bannertext="Health Question" onClick={()=>router.push('/questionprompt/COVID lock-downs are necessary and beneficial')}></TopicButtonLargeUI>}
-      {obj.Covid === true && <TopicButtonLargeUI bannertext="Covid Question" onClick={()=>router.push('/questionprompt/COVID lock-downs are necessary and beneficial')}></TopicButtonLargeUI>}
+      <PromptCardUI headertext='Covid-19' bodytext='COVID lock-down mandates are necessary and beneficial.' src='/ForYouPromptCOVID.png'></PromptCardUI>
+      <PromptCardUI headertext='Foreign Policy' bodytext='Countries should have open borders.' src='/ForYouPromptFOREIGN.png'></PromptCardUI>
+      <PromptCardUI headertext='Economy' bodytext='Universal Basic Income could solve poverty.' src='/ForYouPromptECON.png'></PromptCardUI>
     </TopicContainer>
-    <RandomContainer>
-      <Line></Line>
-      <TextContainer>Can't Decide? Get a Random Prompt!</TextContainer>
-      <RandomButtonUI></RandomButtonUI>
-    </RandomContainer>
     <NavigationUI Iconcolor2="#8BB09C"></NavigationUI>
   </Container>
 }
