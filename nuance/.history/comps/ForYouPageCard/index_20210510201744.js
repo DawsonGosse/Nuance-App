@@ -72,12 +72,12 @@ const PromptCardUI = ({
     headertext='Featured',
     bodytext='Question Goes Here',
     src='/imagesample.png',
-    routeTo='/home',
+    routeTo='/home'
     onClick=()=>{}
 }) => 
 {
     const router = useRouter();
-    return <PromptCont onClick={onClick}>
+    return <PromptCont onClick={}>
         <Component1Header bgcolor={bgcolor}><Component1HeaderText>{headertext}</Component1HeaderText></Component1Header>
         <Component1Img src={src}></Component1Img>
         <Component1TextCont>

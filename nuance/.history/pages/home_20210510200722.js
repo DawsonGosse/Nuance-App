@@ -6,6 +6,7 @@ import QuestionCardUI from '../comps/QuestionCard'
 import NavigationUI from '../comps/Navigation'
 import HelpButtonUI from '../comps/HelpButton'
 import RandomButtonUI from '../comps/RandomizeButton';
+import Carousel from '../comps/Carousel'
 
 const Container = styled.div`
   width:100%;

@@ -174,11 +174,11 @@ export default function SurveyPage() {
               if(buttonstate6 === false)
               {
                 Counter++
-                Selection.Immigration= true
+                Selection.Climatechange= true
               }
               else{
                 Counter--
-                Selection.Immigration= false
+                Selection.Climatechange= false
               }
               if(Counter === 3)
               {

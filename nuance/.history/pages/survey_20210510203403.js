@@ -178,7 +178,7 @@ export default function SurveyPage() {
               }
               else{
                 Counter--
-                Selection.Immigration= false
+                Selection.Climatechange= false
               }
               if(Counter === 3)
               {

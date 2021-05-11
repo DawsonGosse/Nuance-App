@@ -49,10 +49,10 @@ export default function ForYou() {
     <TopicContainer>
       {obj.Covid === true && <PromptCardUI headertext='Covid-19' bodytext='COVID lock-down mandates are necessary and beneficial.' src='/ForYouPromptCOVID.png' onClick={()=>router.push('/questionprompt/COVID lock-downs are necessary and beneficial')}></PromptCardUI>}
       {obj.Healthcare === true && <PromptCardUI headertext='Healthcare' bodytext='COVID lock-down mandates are necessary and beneficial.' src='/ForYouPromptCOVID.png' onClick={()=>router.push('/questionprompt/COVID lock-downs are necessary and beneficial')}></PromptCardUI>}
-      {obj.Foreignpolicy === true && <PromptCardUI headertext='Foreign Policy' bodytext='Countries should have open borders.' src='/ForYouPromptFOREIGN.png' onClick={()=>router.push('/questionprompt/Countries should have open borders')}></PromptCardUI>}
-      {obj.Immigration === true && <PromptCardUI headertext='Immigration' bodytext='Countries should have open borders.' src='/ForYouPromptFOREIGN.png' onClick={()=>router.push('/questionprompt/Countries should have open borders')}></PromptCardUI>}
-      {obj.Economy === true && <PromptCardUI headertext='Economy' bodytext='Universal Basic Income could solve poverty.' src='/ForYouPromptECON.png' onClick={()=>router.push('/questionprompt/Universal Basic Income could solve poverty')}></PromptCardUI>}
-      {obj.Climatechange === true && <PromptCardUI headertext='Climate Change' bodytext='Electric vehicles are a better option.' src='/ForYouPromptCLIMATE.png' onClick={()=>router.push('/questionprompt/Electric vehicles are a better option')}></PromptCardUI>}
+      {obj.Foreignpolicy === true && <PromptCardUI headertext='Foreign Policy' bodytext='Countries should have open borders.' src='/ForYouPromptFOREIGN.png' onClick={()=>router.push('/questionprompt/COVID lock-downs are necessary and beneficial')}></PromptCardUI>}
+      {obj.Immigration === true && <PromptCardUI headertext='Immigration' bodytext='Countries should have open borders.' src='/ForYouPromptFOREIGN.png' onClick={()=>router.push('/questionprompt/COVID lock-downs are necessary and beneficial')}></PromptCardUI>}
+      {obj.Economy === true && <PromptCardUI headertext='Economy' bodytext='Universal Basic Income could solve poverty.' src='/ForYouPromptECON.png' onClick={()=>router.push('/questionprompt/COVID lock-downs are necessary and beneficial')}></PromptCardUI>}
+      {obj.Climatechange === true && <PromptCardUI headertext='Climate Change' bodytext='Electric vehicles are a better option.' src='/ForYouPromptCLIMATE.png'></PromptCardUI>}
     </TopicContainer>
     <NavigationUI Iconcolor2="#8BB09C"></NavigationUI>
   </Container>

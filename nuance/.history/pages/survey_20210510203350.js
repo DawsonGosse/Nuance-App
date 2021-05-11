@@ -174,11 +174,11 @@ export default function SurveyPage() {
               if(buttonstate6 === false)
               {
                 Counter++
-                Selection.Immigration= true
+                Selection.Climatechange= true
               }
               else{
                 Counter--
-                Selection.Immigration= false
+                Selection.Climatechange= false
               }
               if(Counter === 3)
               {
@@ -210,7 +210,7 @@ export default function SurveyPage() {
         <TopicButtonUI bannertext="GUN POLICY" src="/Topic7.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="ETHNIC & RACE" src="/Topic8.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="CLIMATE CHANGE" src="/Topic9.png" onClick={HandleClickButtonColor5} bgcolor={buttonstate5 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
-        <TopicButtonUI bannertext="IMMIGRATION" src="/Topic10.png" onClick={HandleClickButtonColor6} bgcolor={buttonstate6 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
+        <TopicButtonUI bannertext="IMMIGRATION" src="/Topic10.png" onClick={HandleClickButtonColor6} bgcolor={buttonstate5 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="ABORTION" src="/Topic11.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="OTHER" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
     </RowCont>
