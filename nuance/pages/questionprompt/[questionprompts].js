@@ -18,11 +18,11 @@ position:absolute;
 `
 const ImgCont = styled.div
 `
-width:100vw;
-height:100vh;
-object-fit:cover;
-overflow:hidden;
-position:relative;
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    overflow:hidden;
+    position:relative;
 `
 const Img = styled.img
 `
@@ -31,6 +31,11 @@ const Img = styled.img
 `
 const Text = styled.h3
 `
+display: flex;
+left: 5%;
+right: 5%;
+justify-content: center;
+align-items: center;
 padding:20px;
 font-size:30px;
 font-weight:bold;
@@ -39,6 +44,16 @@ text-transform:uppercase;
 text-align:center;
 top:80px;
 position:absolute
+`
+
+const ButtonCont = styled.div`
+    display: flex;
+    position: absolute;
+    top: 300px;
+    left: 5%;
+    right: 5%;
+    justify-content: center;
+    align-items: center;
 `
 
 var questionpromptdata = 
@@ -112,12 +127,16 @@ export default function QuestionPrompts() {
 
   return <Container>
     <BannerBackUI></BannerBackUI>
+    
     <ImgCont>
         <Text>{questionpromptdata.questiontext}</Text>
-        <ButtonAUI left="20px" text="AGREE" onClick={HandleAgree}></ButtonAUI>
-        <ButtonAUI left="218px" text="DISAGREE" onClick={HandleDisagree}></ButtonAUI>
+        <ButtonCont>
+            <ButtonAUI text="AGREE" onClick={HandleAgree}></ButtonAUI>
+            <ButtonAUI text="DISAGREE" onClick={HandleDisagree}></ButtonAUI>
+        </ButtonCont>
         <Img src={questionpromptdata.questionimg}></Img>
     </ImgCont>
+    
     <NavigationUI></NavigationUI>
   </Container>
 }

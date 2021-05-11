@@ -22,6 +22,20 @@ const AgreeImg = styled.img`
     width: 100vw;
     padding-bottom: 40px;
 `
+const Text = styled.p`
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    align-items:center;
+    padding: 20px;
+    @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); 
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    line-height: 20.7px;
+    font-style: normal;
+    font-weight: bold;
+    color: #3E3D46;
+`
 
 var agreedata =
 {
@@ -67,6 +81,7 @@ export default function AgreePage() {
     <BannerBackUI></BannerBackUI>
     <ProgressBarUI id='bar'></ProgressBarUI>
     <AgreeImg src={agreedata.imgsrc}></AgreeImg>
+    <Text>Not sure if you noticed, but you just read the opposing article</Text>
     <ButtonUI text='FINISH!' routeTo={routing.path}></ButtonUI>
     <NavigationUI></NavigationUI>
   </Container>
