@@ -151,9 +151,7 @@ export default function Topics() {
     console.log(questiontext.question2)
     return <Container>
         
-        <BannerBackUI>
-            <HelpButtonUI></HelpButtonUI>
-        </BannerBackUI>
+        <BannerBackUI></BannerBackUI>
         <TopicHeaderUI bannertext={header.text} src={header.src}></TopicHeaderUI>
         <Text>Pick a Prompt that interests you</Text>
         <Icon src='/ArrowDown.png'></Icon>
