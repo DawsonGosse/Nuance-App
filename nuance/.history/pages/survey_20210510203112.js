@@ -109,12 +109,12 @@ export default function SurveyPage() {
         if(buttonstate3 === false)
         {
           Counter++
-          Selection.Covid= true
+          Selection.Gender= true
 
         }
         else{
           Counter--
-          Selection.Covid= false
+          Selection.Gender= false
 
         }
         if(Counter === 3)
@@ -132,11 +132,11 @@ export default function SurveyPage() {
           if(buttonstate4 === false)
           {
             Counter++
-            Selection.Foreignpolicy= true
+            Selection.Covid= true
           }
           else{
             Counter--
-            Selection.Foreignpolicy= false
+            Selection.Covid= false
           }
           if(Counter === 3)
           {
@@ -146,48 +146,6 @@ export default function SurveyPage() {
             SetNextButton(false)
           }
         }
-
-        const [buttonstate5, setButtonState5] = useState(false);  
-        const HandleClickButtonColor5 = () =>{
-            setButtonState5(!buttonstate5);
-            if(buttonstate5 === false)
-            {
-              Counter++
-              Selection.Climatechange= true
-            }
-            else{
-              Counter--
-              Selection.Climatechange= false
-            }
-            if(Counter === 3)
-            {
-              SetNextButton(true)
-            }
-            else{
-              SetNextButton(false)
-            }
-          }
-
-          const [buttonstate6, setButtonState6] = useState(false);  
-          const HandleClickButtonColor6 = () =>{
-              setButtonState6(!buttonstate6);
-              if(buttonstate6 === false)
-              {
-                Counter++
-                Selection.Immigration= true
-              }
-              else{
-                Counter--
-                Selection.Immigration= false
-              }
-              if(Counter === 3)
-              {
-                SetNextButton(true)
-              }
-              else{
-                SetNextButton(false)
-              }
-            }
   
 
     const HandleNext= () =>{
@@ -204,13 +162,13 @@ export default function SurveyPage() {
         <TopicButtonUI bannertext="Economy" src="/Topic1.png" onClick={HandleClickButtonColor1} bgcolor={buttonstate1 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="HealthCare" src="/Topic2.png" onClick={HandleClickButtonColor2} bgcolor={buttonstate2 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="GENDER" src="/Topic3.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
-        <TopicButtonUI bannertext="COVID-19" src="/Topic4.png" onClick={HandleClickButtonColor3} bgcolor={buttonstate3 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
+        <TopicButtonUI bannertext="COVID-19" src="/Topic4.png" onClick={HandleClickButtonColor4} bgcolor={buttonstate4 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="VIOLENT CRIMES" src="/Topic5.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="FOREIGN POLICY" src="/Topic6.png" onClick={HandleClickButtonColor4} bgcolor={buttonstate4 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
         <TopicButtonUI bannertext="GUN POLICY" src="/Topic7.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="ETHNIC & RACE" src="/Topic8.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
-        <TopicButtonUI bannertext="CLIMATE CHANGE" src="/Topic9.png" onClick={HandleClickButtonColor5} bgcolor={buttonstate5 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
-        <TopicButtonUI bannertext="IMMIGRATION" src="/Topic10.png" onClick={HandleClickButtonColor6} bgcolor={buttonstate6 ? '#8BB09C' : '#3E3D46'}></TopicButtonUI>
+        <TopicButtonUI bannertext="CLIMATE CHANGE" src="/Topic9.png"></TopicButtonUI>
+        <TopicButtonUI bannertext="IMMIGRATION" src="/Topic10.png"></TopicButtonUI>
         <TopicButtonUI bannertext="ABORTION" src="/Topic11.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
         <TopicButtonUI bannertext="OTHER" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
     </RowCont>

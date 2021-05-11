@@ -72,7 +72,7 @@ const PromptCardUI = ({
     headertext='Featured',
     bodytext='Question Goes Here',
     src='/imagesample.png',
-    routeTo='/home',
+    routeTo='/home'
     onClick=()=>{}
 }) => 
 {
