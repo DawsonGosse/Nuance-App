@@ -110,7 +110,7 @@ export default function Topics() {
         questiontext.question3= 'null'
         questiontext.question4= 'null'
         header.text = 'Covid-19'
-        header.src = '/CovidQuestion.png'
+        header.src = '/CovidQuestio.png'
         routing.path1 = '/questionprompt/COVID lock-downs are necessary and beneficial'
     }
 
@@ -121,7 +121,7 @@ export default function Topics() {
         questiontext.question3= 'null'
         questiontext.question4= 'null'
         header.text = 'Foreign-Policy'
-        header.src = '/ForeignQuestion.png'
+        header.src = '/topic6.png'
         routing.path1 = '/questionprompt/Countries should have open borders'
     }
 

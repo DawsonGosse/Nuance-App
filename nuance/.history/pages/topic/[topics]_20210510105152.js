@@ -121,7 +121,7 @@ export default function Topics() {
         questiontext.question3= 'null'
         questiontext.question4= 'null'
         header.text = 'Foreign-Policy'
-        header.src = '/ForeignQuestion.png'
+        header.src = '/topic6.png'
         routing.path1 = '/questionprompt/Countries should have open borders'
     }
 
