@@ -6,6 +6,7 @@ import NavigationUI from '../comps/Navigation'
 import ResultScaleUI from '../comps/ResultScale'
 import BannerBackUI from '../comps/Banner(BackButton)'
 import ProgressBarUI from '../comps/ProgressBar'
+import ButtonNextRandomUI from '../comps/ButtonNextRandom'
 
 const Container = styled.div`
   width:100%;
@@ -166,7 +167,8 @@ export default function Rankings() {
         {(CheckState.disagree === true && questionprompts === 'COVID lock-downs are necessary and beneficial') && <ButtonUI text="Other Opinion" routeTo='/agree/COVID lock-downs are necessary and beneficial'></ButtonUI>}
         {(CheckState.agree === true && questionprompts === 'Universal Basic Income could solve poverty') && <ButtonUI text="Other Opinion" routeTo='/disagree/Universal Basic Income could solve poverty'></ButtonUI>}
         {(CheckState.disagree === true && questionprompts === 'Universal Basic Income could solve poverty') && <ButtonUI text="Other Opinion" routeTo='/agree/Universal Basic Income could solve poverty'></ButtonUI>}
-        <ButtonUI text="Next Question"></ButtonUI>
+        <ButtonNextRandomUI text="Next Question"></ButtonNextRandomUI>
+        
     </ButtonCont>
     <NavigationUI></NavigationUI>
   </Container>

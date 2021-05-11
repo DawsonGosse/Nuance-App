@@ -8,12 +8,13 @@ const ButtonCont = styled.div`
 
 const RandomButtonUI = ({
     bgcolor='#3E3D46',
-    text='NEXT',
-    routeTo='/home',
 }) => 
+
+
 {
-    const router = useRouter();
-    return <ButtonCont>
+    const router = useRouter()
+
+    return <ButtonCont onClick={Random}>
         <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="42.3135" y="27.8511" width="25.7616" height="25.7616" rx="3" transform="rotate(39.7189 42.3135 27.8511)" fill={bgcolor}/>
         <circle cx="53.8573" cy="45.1859" r="2.57616" transform="rotate(39.7189 53.8573 45.1859)" fill="white"/>
@@ -30,4 +31,30 @@ const RandomButtonUI = ({
     </ButtonCont>
 }
 
-export default RandomButtonUI;
+function Random()
+{
+
+    let question = Math.floor(Math.random() * 4);
+
+    if(question === 0) 
+    {
+        location.href = '/questionprompt/Electric vehicles are a better option'
+    }
+
+    if(question === 1) 
+    {
+        location.href = '/questionprompt/Countries should have open borders'
+    }
+
+    if(question === 2) 
+    {
+        location.href = '/questionprompt/COVID lock-downs are necessary and beneficial'
+    }
+
+    if(question === 3) 
+    {
+        location.href = '/questionprompt/Universal Basic Income could solve poverty'
+    }
+}
+
+export default RandomButtonUI
