@@ -20,7 +20,6 @@ const Container = styled.div`
 
 const AgreeImg = styled.img`
     width: 100vw;
-    padding-bottom: 40px;
 `
 const Text = styled.p`
     display: flex;
@@ -81,7 +80,7 @@ export default function AgreePage() {
     <BannerBackUI></BannerBackUI>
     <ProgressBarUI id='bar'></ProgressBarUI>
     <AgreeImg src={agreedata.imgsrc}></AgreeImg>
-    <Text>Not sure if you noticed, but you just read the opposing article</Text>
+    <Text>Not sure if you noticed, but you <br></br> just read the opposing article</Text>
     <ButtonUI text='FINISH!' routeTo={routing.path}></ButtonUI>
     <NavigationUI></NavigationUI>
   </Container>

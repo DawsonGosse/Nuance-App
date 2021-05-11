@@ -147,6 +147,17 @@ export default function Topics() {
         routing.path1 = '/questionprompt/Countries should have open borders'
     }
 
+    if(topics === 'funfriday')
+    {
+        questiontext.question1= 'Cats are better than dogs.'
+        questiontext.question2= 'Coke is better than Pepsi.'
+        questiontext.question3= 'Daydreaming is better than Nightdreaming'
+        questiontext.question4= 'Road runner is the bad guy'
+        header.text = 'Fun Friday'
+        header.src = '/fun_friday_big.png'
+        routing.path1 = '/questionprompt/Countries should have open borders'
+    }
+
 
     console.log(questiontext.question2)
     return <Container>

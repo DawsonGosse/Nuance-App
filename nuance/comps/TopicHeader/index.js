@@ -30,6 +30,7 @@ const Component8BannerText = styled.p
     font-size: 36px;
     color: #FFFFFF;
     margin:0px;
+    margin-bottom: 5px;
     padding-left:10px;
 `
 

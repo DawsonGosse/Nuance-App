@@ -1,6 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const Container = styled.div`
+    display: flex;
+    justify-content: center;
+
+`
+
 const HeaderBannerCont = styled.div`
     display: flex;
     height: 20px;
@@ -27,9 +33,11 @@ const HeaderBannerUI = ({
        text = 'Header',
        bgcolor = '#8BB09C'
 }) => {
-    return <HeaderBannerCont bgcolor={bgcolor}>
-        <HeaderBannerText>{text}</HeaderBannerText>
-    </HeaderBannerCont>
+    return <Container>
+        <HeaderBannerCont bgcolor={bgcolor}>
+            <HeaderBannerText>{text}</HeaderBannerText>
+        </HeaderBannerCont>
+    </Container>
 }
 
 export default HeaderBannerUI

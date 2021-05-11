@@ -44,8 +44,7 @@ export default function CategoriesPage() {
         <TopicButtonUI bannertext="climate change" src="/Topic9.png" onClick={()=>router.push('/topic/climate-change')}></TopicButtonUI>
         <TopicButtonUI bannertext="immigration" src="/Topic10.png" onClick={()=>router.push('/topic/immigration')}></TopicButtonUI>
         <TopicButtonUI bannertext="abortion" src="/Topic11.png" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
-        <TopicButtonUI bannertext="other" inactive='grayscale(100%)' text='#999999' inactivetext="block"></TopicButtonUI>
-
+        <TopicButtonUI bannertext="fun fridays" src="/fun_friday.png" onClick={()=>router.push('/topic/funfriday')}></TopicButtonUI>
     </RowCont>
     <NavigationUI Iconcolor3="#8BB09C"></NavigationUI>
   </Container>

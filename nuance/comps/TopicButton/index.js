@@ -27,22 +27,18 @@ const Component7Img = styled.img                 // put image in public folder
     filter:${props=>props.inactive};
 `;
 
-const Component7Banner = styled.div       
-`   
+const Component7Banner = styled.div`   
     width: 175px;
     height: 20px;
     background:${props=>props.bgcolor};
     border-radius: 0px 0px 3px 3px;
     padding: 5px 0px 0px 5px;
     user-select: none;
-
     position:relative;
     bottom: 20px;
     z-index: 1;
- 
     display: flex;
     align-items: flex-end;  
-    
     @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); 
     font-family: 'Arimo', sans-serif;
     text-transform: uppercase;
@@ -50,7 +46,7 @@ const Component7Banner = styled.div
     font-weight: bold;
     font-size: 18px;
     color: ${props=>props.text};
-`;
+`
 
 const InactiveText = styled.p`
     @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap'); 

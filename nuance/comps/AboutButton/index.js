@@ -16,7 +16,7 @@ const Path = styled.path`
 const AboutButtonUI = ({
 }) => 
 {
-    const router = useRouter();
+    const router = useRouter()
 
     return <AboutButtonCont onClick={()=>router.push('/about')}>
        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
