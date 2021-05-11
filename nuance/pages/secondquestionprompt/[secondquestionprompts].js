@@ -6,49 +6,66 @@ import ButtonAUI from '../../comps/Button(Absolute)';
 import NavigationUI from '../../comps/Navigation';
 
 const Container = styled.div`
-width:100%;
-height:100%;
-display:flex;
-justify-content:flex-start;
-align-items:center;
-flex-direction:column;
-scroll-behavior: smooth;
-overflow: hidden;
-position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction:column;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    position:absolute;
 `
-const ImgCont = styled.div
+const ImgCont = styled.div`
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    overflow:hidden;
+    position:relative;
 `
-width:100vw;
-height:100vh;
-object-fit:cover;
-overflow:hidden;
-position:relative;
-`
-const Img = styled.img
-`
+const Img = styled.img`
   width:100%;
   height:100%;
 `
-const Text = styled.h3
+const Text = styled.h3`
+    display: flex;
+    left: 5%;
+    right: 5%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+    top:80px;
+    position:absolute
 `
-margin: 20px;
-font-size:30px;
-font-weight:bold;
-color:white;
-text-transform:uppercase;
-text-align:center;
-top:80px;
-position:absolute
+const SubText = styled.p`
+    display: flex;
+    left: 5%;
+    right: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size:14px;
+    position:absolute;
+    text-align:center;
+    color:white;
+    top:185px;
+    padding:20px;
 `
-const SubText = styled.p
-`
-margin-top: 20px;
-font-size:14px;
-position:absolute;
-text-align:center;
-color:white;
-top:185px;
-padding:20px;
+
+const ButtonCont = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 300px;
+    left: 5%;
+    right: 5%;
+    justify-content: center;
+    align-items: center;
 `
 
 var secondquestionpromptdata = 
@@ -91,9 +108,11 @@ export default function SecondQuestionPrompts() {
     <ImgCont>
         <Text>{secondquestionpromptdata.questiontext}</Text>
         <SubText>After reading the oposing argument do you still feel the same way?</SubText>
-        <ButtonAUI top='320px' left="20px" text="AGREE" routeTo='/rankings' ></ButtonAUI>
-        <ButtonAUI top='320px' left="218px" text="DISAGREE" routeTo='/rankings'></ButtonAUI>
-        <ButtonAUI top='400px' left="120px" text="UNSURE" routeTo='/rankings'></ButtonAUI>
+        <ButtonCont>
+            <ButtonAUI text="AGREE" routeTo='/rankings' ></ButtonAUI>
+            <ButtonAUI text="DISAGREE" routeTo='/rankings'></ButtonAUI>
+            <ButtonAUI text="UNSURE" routeTo='/rankings'></ButtonAUI>
+        </ButtonCont>
         <Img src={secondquestionpromptdata.questionimg}></Img>
     </ImgCont>
     <NavigationUI></NavigationUI>

@@ -5,9 +5,9 @@ import {useRouter} from 'next/router'
 const Component6Cont = styled.div`
     width: 180px;
     height: 60px;
+    margin: 5px;
     background-color: ${props=>props.bgcolor};
-    border-radius: 3px;    
-
+    border-radius: 3px;  
     color: #E5E5E5;
     font-style: normal;
     font-weight: bold;
@@ -15,14 +15,9 @@ const Component6Cont = styled.div`
     line-height: 21px;
     text-align: center;
     letter-spacing: 0.05em;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    position:absolute; 
-    top:${props=>props.top};
-    left:${props=>props.left};
-
     &:hover {
         background-color:#8bb09c;
     }
@@ -39,13 +34,11 @@ const Component6Text = styled.h3`
 const ButtonAUI = ({
     bgcolor='#3E3D46',
     text='NEXT',
-    top="280px",
-    left="50px",
     routeTo='/home'      
 }) => 
 {
     const router = useRouter();
-    return <Component6Cont bgcolor={bgcolor} top={top} left={left} onClick={()=>router.push(routeTo)}>
+    return <Component6Cont bgcolor={bgcolor} onClick={()=>router.push(routeTo)}>
         <Component6Text>{text}</Component6Text>
     </Component6Cont>
 }
