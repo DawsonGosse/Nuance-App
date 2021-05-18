@@ -4,7 +4,7 @@ import {useRouter} from 'next/router'
 
 const AboutButtonCont = styled.div`
     position: relative;
-    bottom: 14%;
+    bottom: 12%;
     left: 40%;
 `
 const Path = styled.path`

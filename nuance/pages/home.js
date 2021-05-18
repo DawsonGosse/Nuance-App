@@ -5,7 +5,7 @@ import BannerUI from '../comps/Banner'
 import QuestionCardUI from '../comps/QuestionCard'
 import NavigationUI from '../comps/Navigation'
 import HelpButtonUI from '../comps/HelpButton'
-import RandomButtonUI from '../comps/RandomizeButton';
+import RandomButtonUI from '../comps/RandomizeButton'
 
 const Container = styled.div`
   width:100%;
@@ -64,6 +64,7 @@ export default function HomePage() {
     <QuestionCardUI headertext="Daliy Topic" bodytext="General Motors has joined a list of growing companies to mandate that all their vehicles be electric by a certain date. Governments too, motivated 
 by..." subheadertext="Electric Vehicle debate" src="/CarImage.jpg" bgcolor="#8BB09C" linecolor='#8BB09C' lineleft='0px' headingalign='right' headercolor='#8BB09C' routeTo="/questionprompt/Electric vehicles are a better option"></QuestionCardUI>
     <QuestionCardUI linewidth='140px' lineleft='197px' routeTo='/questionprompt/Electric vehicles are a better option'></QuestionCardUI>
+    
     <RandomContainer>
       <Line></Line>
       <TextContainer>Can't Decide? Get a Random Prompt!</TextContainer>
