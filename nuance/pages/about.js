@@ -49,10 +49,10 @@ export default function AboutPage() {
       <Text>Most apps are designed to feed us content that they we expect to engage with, resulting in showing us more of what we already believe or like. This can lead to get stuck in our own opinions. Nuance is here to challenge that.</Text>
       <HeaderBannerUI text="credits" bgcolor="#3E3D46"></HeaderBannerUI>
       <CreditPicturesCont>
-        <ProfilePictureUI name='Kevin Adlparvar' img='https://place-puppy.com/100x100'></ProfilePictureUI>
-        <ProfilePictureUI name='Ashley Cant' img='https://place-puppy.com/200x200'></ProfilePictureUI>
-        <ProfilePictureUI name='Dawson Gosse' img='https://place-puppy.com/300x300'></ProfilePictureUI>
-        <ProfilePictureUI name='Hannah MacPherson' img='https://place-puppy.com/400x400'></ProfilePictureUI>
+        <ProfilePictureUI name='Kevin Adlparvar' img='/kevin.png'></ProfilePictureUI>
+        <ProfilePictureUI name='Ashley Cant' img='/ashley.png'></ProfilePictureUI>
+        <ProfilePictureUI name='Dawson Gosse' img='/dawson.png'></ProfilePictureUI>
+        <ProfilePictureUI name='Hannah MacPherson' img='/hannah.png'></ProfilePictureUI>
       </CreditPicturesCont>
       <ButtonUI text="BACK" routeTo='/'></ButtonUI>
   </Container>
