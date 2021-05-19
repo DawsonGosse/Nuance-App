@@ -9,7 +9,6 @@ import ProgressBarUI from '../comps/ProgressBar'
 import ButtonNextRandomUI from '../comps/ButtonNextRandom'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import VisibilitySensor from "react-visibility-sensor";
 
 const Container = styled.div`
   width:100%;
@@ -76,7 +75,6 @@ const PercentCont = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items:center;
 height: 770px;
 width: 500px;
 background-image: url(${props=>props.bgimg});
@@ -128,10 +126,10 @@ const ButtonCont = styled.div`
 `
 
 const GraphCont = styled.div`
-  width:280px;
-  display:flex;
+
 `
 
+const percentage = 66;
 
 export default function Rankings() {
 
@@ -155,168 +153,19 @@ export default function Rankings() {
     </BodyTextCont>
     <PercentCont bgimg={"/ranking_percentbg1.svg"}>
       <GraphCont>
-      <VisibilitySensor>
-            {({ isVisible }) => {
-              const percentage = isVisible ? 70 : 0;
-              return (
-        <CircularProgressbar value={percentage} text={`${percentage}%`}  styles={{
-            // Customize the root svg element
-            root: {},
-            // Customize the path, i.e. the "completed progress"
-            path: {
-              // Path color
-              stroke: `#8BB09C`,
-              // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
-              strokeLinecap: 'round',
-              // Customize transition animation
-              transition: 'stroke-dashoffset 0.5s ease 0s',
-              // Rotate the path
-              transform: 'rotate(0.25turn)',
-              transformOrigin: 'center center',
-            },
-            // Customize the circle behind the path, i.e. the "total progress"
-            trail: {
-              // Trail color
-              stroke: '#C7E0D2',
-              // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
-              strokeLinecap: 'butt',
-              // Rotate the trail
-              transform: 'rotate(0.25turn)',
-              transformOrigin: 'center center',
-            },
-            // Customize the text
-            text: {
-              // Text color
-              fill: '#3E3D46',
-              // Text size
-              fontSize: '24px',
-              // Font
-              fontFamily: 'Arimo',
-              // Font weight
-              fontWeight:'bold',
-            },
-            // Customize background - only used when the `background` prop is true
-            background: {
-              fill: 'none',
-            },
-          }}/>
-          );
-        }}
-      </VisibilitySensor>
+        <CircularProgressbar value={percentage} text={`${percentage}%`} />;
       </GraphCont>
     </PercentCont>
     <NumberCont bg={"/ranking_blob1.svg"}>
       <NumberText>70%</NumberText>
     </NumberCont>
     <NumberCaption>CHANGED THEIR OPINION</NumberCaption>
-    <PercentCont bgimg={"/ranking_percentbg2.svg"}>
-    <GraphCont>
-      <VisibilitySensor>
-            {({ isVisible }) => {
-              const percentage = isVisible ? 60 : 0;
-              return (
-        <CircularProgressbar value={percentage} text={`${percentage}%`}  styles={{
-            // Customize the root svg element
-            root: {},
-            // Customize the path, i.e. the "completed progress"
-            path: {
-              // Path color
-              stroke: `#8BB09C`,
-              // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
-              strokeLinecap: 'round',
-              // Customize transition animation
-              transition: 'stroke-dashoffset 0.5s ease 0s',
-              // Rotate the path
-              transform: 'rotate(0.25turn)',
-              transformOrigin: 'center center',
-            },
-            // Customize the circle behind the path, i.e. the "total progress"
-            trail: {
-              // Trail color
-              stroke: '#E1E1E1',
-              // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
-              strokeLinecap: 'butt',
-              // Rotate the trail
-              transform: 'rotate(0.25turn)',
-              transformOrigin: 'center center',
-            },
-            // Customize the text
-            text: {
-              // Text color
-              fill: '#fff',
-              // Text size
-              fontSize: '24px',
-              // Font
-              fontFamily: 'Arimo',
-              // Font weight
-              fontWeight:'bold',
-            },
-            // Customize background - only used when the `background` prop is true
-            background: {
-              fill: 'none',
-            },
-          }}/>
-          );
-        }}
-      </VisibilitySensor>
-      </GraphCont>
-    </PercentCont>
+    <PercentCont bgimg={"/ranking_percentbg2.svg"}></PercentCont>
     <NumberCont bg={"/ranking_blob2.svg"}>
       <NumberText>60%</NumberText>
     </NumberCont>
     <NumberCaption>AGREED</NumberCaption>
-    <PercentCont bgimg={"/ranking_percentbg3.svg"}>
-    <GraphCont>
-      <VisibilitySensor>
-            {({ isVisible }) => {
-              const percentage = isVisible ? 40 : 0;
-              return (
-        <CircularProgressbar value={percentage} text={`${percentage}%`}  styles={{
-            // Customize the root svg element
-            root: {},
-            // Customize the path, i.e. the "completed progress"
-            path: {
-              // Path color
-              stroke: `#8BB09C`,
-              // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
-              strokeLinecap: 'round',
-              // Customize transition animation
-              transition: 'stroke-dashoffset 0.5s ease 0s',
-              // Rotate the path
-              transform: 'rotate(0.25turn)',
-              transformOrigin: 'center center',
-            },
-            // Customize the circle behind the path, i.e. the "total progress"
-            trail: {
-              // Trail color
-              stroke: '#E1E1E1',
-              // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
-              strokeLinecap: 'butt',
-              // Rotate the trail
-              transform: 'rotate(0.25turn)',
-              transformOrigin: 'center center',
-            },
-            // Customize the text
-            text: {
-              // Text color
-              fill: '#fff',
-              // Text size
-              fontSize: '24px',
-              // Font
-              fontFamily: 'Arimo',
-              // Font weight
-              fontWeight:'bold',
-            },
-            // Customize background - only used when the `background` prop is true
-            background: {
-              fill: 'none',
-            },
-          }}/>
-          );
-        }}
-      </VisibilitySensor>
-      </GraphCont>
-    </PercentCont>
+    <PercentCont bgimg={"/ranking_percentbg3.svg"}></PercentCont>
     <NumberCont bg={"/ranking_blob2.svg"}>
       <NumberText>40%</NumberText>
     </NumberCont>
