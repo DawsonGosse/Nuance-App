@@ -269,7 +269,7 @@ export default function Rankings() {
     <GraphCont>
       <VisibilitySensor>
             {({ isVisible }) => {
-              const percentage = isVisible ? 40 : 0;
+              const percentage = isVisible ? 60 : 0;
               return (
         <CircularProgressbar value={percentage} text={`${percentage}%`}  styles={{
             // Customize the root svg element
