@@ -38,7 +38,6 @@ const Component1HeaderText = styled.h3`
     color: #F5F5F5;
     margin-left:5px;
     text-transform:uppercase;
-    text-align:left;
 
 `;
 

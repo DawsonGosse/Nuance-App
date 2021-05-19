@@ -80,7 +80,7 @@ by..." subheadertext="Electric Vehicle debate" src="/CarImage.jpg" bgcolor="#8BB
         <QuestionCardUI headertext="Featured" bodytext="COVID-19 has rocked the world. In some cases, countries and communities spent over a year in quarantine..." subheadertext="COVID-19 Debate" src="/COVIDImageLAST.png" linewidth="188px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/COVID lock-downs are necessary and beneficial"></QuestionCardUI>
       </CarouselCont>
       <CarouselCont>
-        <QuestionCardUI headertext="Featured" bodytext="Global poverty is an issue most people would like to have solved. The concept of universal basic income aims to do this..." subheadertext="Income Debate" src="/coinImageLAST.png" linewidth="199px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/Universal Basic Income could solve poverty"></QuestionCardUI>
+        <QuestionCardUI headertext="Featured" bodytext="Global poverty is an issue most people would like to have solved. The concept of universal basic income aims to do this..." subheadertext="Income Debate" src="/coinImageLAST.png" linewidth="199px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/Electric vehicles are a better option"></QuestionCardUI>
       </CarouselCont>
     </Carousel>
     <RandomContainer>

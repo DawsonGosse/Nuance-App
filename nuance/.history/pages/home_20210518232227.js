@@ -74,13 +74,13 @@ export default function HomePage() {
 by..." subheadertext="Electric Vehicle debate" src="/CarImage.jpg" bgcolor="#8BB09C" linecolor='#8BB09C' lineleft='0px' headingalign='right' headercolor='#8BB09C' routeTo="/questionprompt/Electric vehicles are a better option"></QuestionCardUI>
     <Carousel width='390px' showStatus="" showArrows="true">
       <CarouselCont>
-        <QuestionCardUI headertext="Featured" bodytext="The discourse on whether borders should be open and free is often misunderstood. The arguments from either side seldom..." subheadertext="borders Debate" src="/BorderImageLAST.png" linewidth="188px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/Countries should have open borders"></QuestionCardUI>
+        <QuestionCardUI headertext="Featured" bodytext="The discourse on whether borders should be open and free is often misunderstood. The arguments from either side seldom..." subheadertext="borders Debate" src="/BorderImageLAST.png" linewidth="188px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/Electric vehicles are a better option"></QuestionCardUI>
       </CarouselCont>
       <CarouselCont>
-        <QuestionCardUI headertext="Featured" bodytext="COVID-19 has rocked the world. In some cases, countries and communities spent over a year in quarantine..." subheadertext="COVID-19 Debate" src="/COVIDImageLAST.png" linewidth="188px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/COVID lock-downs are necessary and beneficial"></QuestionCardUI>
+        <QuestionCardUI headertext="Featured" bodytext="COVID-19 has rocked the world. In some cases, countries and communities spent over a year in quarantine..." subheadertext="COVID-19 Debate" src="/COVIDImageLAST.png" linewidth="188px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/Electric vehicles are a better option"></QuestionCardUI>
       </CarouselCont>
       <CarouselCont>
-        <QuestionCardUI headertext="Featured" bodytext="Global poverty is an issue most people would like to have solved. The concept of universal basic income aims to do this..." subheadertext="Income Debate" src="/coinImageLAST.png" linewidth="199px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/Universal Basic Income could solve poverty"></QuestionCardUI>
+        <QuestionCardUI headertext="Featured" bodytext="Global poverty is an issue most people would like to have solved. The concept of universal basic income aims to do this..." subheadertext="Income Debate" src="/coinImageLAST.png" linewidth="193px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/Electric vehicles are a better option"></QuestionCardUI>
       </CarouselCont>
     </Carousel>
     <RandomContainer>
