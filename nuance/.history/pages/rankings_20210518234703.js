@@ -289,7 +289,7 @@ export default function Rankings() {
             // Customize the circle behind the path, i.e. the "total progress"
             trail: {
               // Trail color
-              stroke: '#AFB7C1',
+              stroke: '#AFV',
               // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
               strokeLinecap: 'butt',
               // Rotate the trail

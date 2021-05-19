@@ -49,7 +49,6 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
-margin-top:-20px;
 `
 
 const Line = styled.div`
@@ -62,27 +61,26 @@ const TextContainer = styled.p`
 font-size:13px;
 `
 
-const CarouselCont = styled.div`
-display:flex;
-`
-
 export default function HomePage() {
   const router = useRouter();
   return <Container>
     <BannerUI></BannerUI>
     <QuestionCardUI headertext="Daliy Topic" bodytext="General Motors has joined a list of growing companies to mandate that all their vehicles be electric by a certain date. Governments too, motivated 
 by..." subheadertext="Electric Vehicle debate" src="/CarImage.jpg" bgcolor="#8BB09C" linecolor='#8BB09C' lineleft='0px' headingalign='right' headercolor='#8BB09C' routeTo="/questionprompt/Electric vehicles are a better option"></QuestionCardUI>
-    <Carousel width='390px' showStatus="" showArrows="true">
-      <CarouselCont>
-        <QuestionCardUI headertext="Featured" bodytext="The discourse on whether borders should be open and free is often misunderstood. The arguments from either side seldom..." subheadertext="borders Debate" src="/BorderImageLAST.png" linewidth="188px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/Countries should have open borders"></QuestionCardUI>
-      </CarouselCont>
-      <CarouselCont>
-        <QuestionCardUI headertext="Featured" bodytext="COVID-19 has rocked the world. In some cases, countries and communities spent over a year in quarantine..." subheadertext="COVID-19 Debate" src="/COVIDImageLAST.png" linewidth="188px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/COVID lock-downs are necessary and beneficial"></QuestionCardUI>
-      </CarouselCont>
-      <CarouselCont>
-        <QuestionCardUI headertext="Featured" bodytext="Global poverty is an issue most people would like to have solved. The concept of universal basic income aims to do this..." subheadertext="Income Debate" src="/coinImageLAST.png" linewidth="199px" bgcolor="#3E3D46" linecolor='#ECCD97' lineleft='0px' headingalign='right' headercolor='#ECCD97' routeTo="/questionprompt/Universal Basic Income could solve poverty"></QuestionCardUI>
-      </CarouselCont>
-    </Carousel>
+    <QuestionCardUI linewidth='140px' lineleft='197px' routeTo='/questionprompt/Electric vehicles are a better option'></QuestionCardUI>
+    <Carousel>
+                <div>
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src="assets/2.jpeg" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="assets/3.jpeg" />
+                    <p className="legend">Legend 3</p>
+                </div>
+            </Carousel>
     <RandomContainer>
       <Line></Line>
       <TextContainer>Can't Decide? Get a Random Prompt!</TextContainer>

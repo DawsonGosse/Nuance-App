@@ -221,7 +221,7 @@ export default function Rankings() {
             // Customize the path, i.e. the "completed progress"
             path: {
               // Path color
-              stroke: `#E1E1E1`,
+              stroke: `#9597a1`,
               // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
               strokeLinecap: 'round',
               // Customize transition animation
@@ -277,7 +277,7 @@ export default function Rankings() {
             // Customize the path, i.e. the "completed progress"
             path: {
               // Path color
-              stroke: `#e1e1e1`,
+              stroke: `#8BB09C`,
               // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
               strokeLinecap: 'round',
               // Customize transition animation
@@ -289,7 +289,7 @@ export default function Rankings() {
             // Customize the circle behind the path, i.e. the "total progress"
             trail: {
               // Trail color
-              stroke: '#AFB7C1',
+              stroke: '#E1E1E1',
               // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
               strokeLinecap: 'butt',
               // Rotate the trail
