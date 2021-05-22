@@ -129,7 +129,6 @@ const ButtonCont = styled.div`
 
 const GraphCont = styled.div`
   width:280px;
-  display:flex;
 `
 
 
